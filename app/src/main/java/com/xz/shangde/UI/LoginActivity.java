@@ -41,6 +41,7 @@ public class LoginActivity extends Activity {
             Intent intent=new Intent(this,MainActivity.class);
             intent.putExtra("UserID",UserID);
             startActivity(intent);
+            finish();
         }
         else {
             //未登录，进入登陆界面

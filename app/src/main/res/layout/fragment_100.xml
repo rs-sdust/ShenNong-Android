@@ -4,30 +4,21 @@
     android:layout_height="match_parent">
 
     <!--导航栏-->
-    <RelativeLayout
+    <android.support.v7.widget.Toolbar
         android:id="@+id/NavigaterBar_100"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true">
+        android:layout_height="@dimen/Top_Navigation_Height">
 
         <TextView
             android:id="@+id/MyFarm_100"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:layout_gravity="center"
             android:text="我的农场"
             android:textSize="25dp" />
 
-        <Button
-            android:id="@+id/drawfarm_100"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            />
-
-    </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
 
     <!--创建农场栏-->
     <RelativeLayout

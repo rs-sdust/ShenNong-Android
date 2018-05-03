@@ -20,12 +20,12 @@
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\aliwx_chatting_detail_item_leftname.xml"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_aliwx_chatting_detail_audio_unread.xml.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\aliwx_chatting_detail_audio_unread.xml"
-    },
-    {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_green_button_bg_p.9.png.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_green_button_bg_p.9.png"
+    },
+    {
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_aliwx_chatting_detail_audio_unread.xml.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\aliwx_chatting_detail_audio_unread.xml"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_g002.png.flat",
@@ -56,16 +56,16 @@
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_editor_more_pressed.png"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_btn_search_bar.9.png.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_btn_search_bar.9.png"
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_aliwx_black_progress_dialog.xml.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\aliwx_black_progress_dialog.xml"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_aliwx_smily_tab_bg.xml.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_smily_tab_bg.xml"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_aliwx_black_progress_dialog.xml.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\aliwx_black_progress_dialog.xml"
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_btn_search_bar.9.png.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_btn_search_bar.9.png"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_common_back_btn_white_normal.png.flat",
@@ -80,12 +80,12 @@
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\aliwx_image_view.xml"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_chatting_selfhelp_sub_menu_item.xml.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\chatting_selfhelp_sub_menu_item.xml"
-    },
-    {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_aliwx_my_progress.xml.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_my_progress.xml"
+    },
+    {
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_chatting_selfhelp_sub_menu_item.xml.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\chatting_selfhelp_sub_menu_item.xml"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_aliwx_default_chatting_title.xml.flat",
@@ -140,28 +140,28 @@
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\pub_unread.png"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_aliwx_topbar_icon_download_bg.xml.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_topbar_icon_download_bg.xml"
-    },
-    {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim_aliwx_slide_left_out.xml.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\anim\\aliwx_slide_left_out.xml"
+    },
+    {
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_aliwx_topbar_icon_download_bg.xml.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_topbar_icon_download_bg.xml"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_default_photo.9.png.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_default_photo.9.png"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_search_text_bg.9.png.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_search_text_bg.9.png"
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_chatting_selfhelp_sub_menu_list.xml.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\chatting_selfhelp_sub_menu_list.xml"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_aliwx_hongbao_send_btn_bg.xml.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_hongbao_send_btn_bg.xml"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_chatting_selfhelp_sub_menu_list.xml.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\chatting_selfhelp_sub_menu_list.xml"
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_search_text_bg.9.png.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_search_text_bg.9.png"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_coin.png.flat",
@@ -172,12 +172,12 @@
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_s035.png"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_msg_transfer_press.png.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_msg_transfer_press.png"
-    },
-    {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_msg_unsent.png.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_msg_unsent.png"
+    },
+    {
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_msg_transfer_press.png.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_msg_transfer_press.png"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_s008.png.flat",
@@ -188,12 +188,12 @@
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\aliwx_chatting_detail_gif.xml"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_aliwx_tooltip_button_middle.xml.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_tooltip_button_middle.xml"
-    },
-    {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_photo_group_offline.png.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_photo_group_offline.png"
+    },
+    {
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_aliwx_tooltip_button_middle.xml.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_tooltip_button_middle.xml"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_picture_select_titlebar.png.flat",
@@ -204,16 +204,16 @@
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_record_btn_bg.xml"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_hongbao_bubble_right_bg.9.png.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_hongbao_bubble_right_bg.9.png"
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_aliwx_comment_l_nested.9.png.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\aliwx_comment_l_nested.9.png"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_aliwx_list_dialog_layout.xml.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\aliwx_list_dialog_layout.xml"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_aliwx_comment_l_nested.9.png.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\aliwx_comment_l_nested.9.png"
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_hongbao_bubble_right_bg.9.png.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_hongbao_bubble_right_bg.9.png"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_s076.png.flat",
@@ -248,12 +248,12 @@
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_reply_bar_expand_unchecked.xml"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_aliwx_member_item.xml.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\aliwx_member_item.xml"
-    },
-    {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_chatfrom_play_r03.png.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_chatfrom_play_r03.png"
+    },
+    {
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_aliwx_member_item.xml.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\aliwx_member_item.xml"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_trade_focus_bg.9.png.flat",
@@ -268,12 +268,12 @@
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\aliwx_bg_photo_window_pressed.9.png"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_aliwx_play_completed.mp3.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\raw\\aliwx_play_completed.mp3"
-    },
-    {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_aliwx_notify_title.xml.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\layout\\aliwx_notify_title.xml"
+    },
+    {
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_aliwx_play_completed.mp3.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\raw\\aliwx_play_completed.mp3"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_player_playbtn.png.flat",
@@ -308,12 +308,12 @@
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_pub_btn_white_nor.9.png"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_g020.png.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_g020.png"
-    },
-    {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_s069.png.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_s069.png"
+    },
+    {
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_g020.png.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_g020.png"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_s040.png.flat",
@@ -344,12 +344,12 @@
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\aliwx_g006.png"
     },
     {
-        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_aliwx_time_text_view_border.xml.flat",
-        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_time_text_view_border.xml"
-    },
-    {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_aliwx_tooltip_button_first_checked.xml.flat",
         "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_tooltip_button_first_checked.xml"
+    },
+    {
+        "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_aliwx_time_text_view_border.xml.flat",
+        "source": "E:\\project\\Shangde\\wx\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_time_text_view_border.xml"
     },
     {
         "merged": "E:\\project\\Shangde\\wx\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_aliwx_record_bg.9.png.flat",

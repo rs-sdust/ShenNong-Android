@@ -4,22 +4,19 @@
     android:layout_height="match_parent">
 
     <!--导航栏-->
-    <RelativeLayout
+    <android.support.v7.widget.Toolbar
         android:id="@+id/NavigaterBar_200"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true">
-
+        android:layout_height="@dimen/Top_Navigation_Height">
         <TextView
             android:id="@+id/MyFarm_200"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:text="农情监测"
             android:textSize="25dp" />
-    </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
 
     <org.osmdroid.views.MapView
         android:id="@+id/map_200"

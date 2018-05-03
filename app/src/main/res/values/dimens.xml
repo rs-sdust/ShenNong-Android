@@ -2,4 +2,5 @@
 <resources>
     <dimen name="BottomNavigation_Height">50dp</dimen>
     <dimen name="Fragment_100">3dp</dimen>
+    <dimen name="Top_Navigation_Height">50dp</dimen>
 </resources>

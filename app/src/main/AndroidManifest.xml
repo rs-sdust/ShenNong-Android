@@ -24,5 +24,6 @@
         </activity>
         <activity android:name=".UI.MainActivity" android:launchMode="singleTask"></activity>
         <activity android:name=".UI.EditInfoActivity" android:launchMode="singleTask"></activity>
+        <activity android:name=".UI.AddFarmActivity" android:launchMode="singleTask"></activity>
     </application>
 </manifest>
