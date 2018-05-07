@@ -1,27 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--导航栏-->
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/NavigaterBar_200"
+    <Button
+        android:id="@+id/MyFarm_200"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/Top_Navigation_Height">
-        <TextView
-            android:id="@+id/MyFarm_200"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="农情监测"
-            android:textSize="25dp" />
-    </android.support.v7.widget.Toolbar>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="农情监测"
+        android:textColor="#E3E3E3"
+        android:background="@android:color/transparent"
+        android:textSize="20dp" />
 
     <org.osmdroid.views.MapView
         android:id="@+id/map_200"
-        android:layout_below="@id/NavigaterBar_200"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
     </org.osmdroid.views.MapView>
+
+    <RelativeLayout
+        android:id="@+id/rl_photo_200"
+        android:layout_above="@id/rl_locaton_200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_photo_200"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_add_a_photo_black_24dp"
+            android:background="@drawable/button_shape_200"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_locaton_200"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+        android:id="@+id/iv_location_200"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_my_location_black_24dp"
+        android:background="@drawable/button_shape_200"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_spinner_layer_200"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Spinner
+        android:id="@+id/spinner_image_layers_200"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:entries="@array/layers"
+        android:spinnerMode="dialog"
+        android:background="@drawable/button_login_shape"></Spinner>
+    </RelativeLayout>
+
 </RelativeLayout>

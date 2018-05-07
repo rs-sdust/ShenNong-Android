@@ -38,5 +38,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:0.5'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
     compile 'org.osmdroid:osmdroid-android:6.0.1'
+    compile 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation project(':wx')
 }

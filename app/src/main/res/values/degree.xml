@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="degrees">
-        <item>农场管理人员</item>
-        <item>农场工作人员</item>
-        <item>其他</item>
+        <item>农场主</item>
+        <item>管理员</item>
     </string-array>
 </resources>

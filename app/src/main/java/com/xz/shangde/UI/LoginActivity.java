@@ -36,7 +36,7 @@ public class LoginActivity extends Activity {
         boolean Logedin=sp.getBoolean("Logedin",false);
         if(Logedin){
             Log.i("starttest","right");
-            //            todo 如果已经登陆，需要做的操作(进入主界面，下载数据)
+            //todo 如果已经登陆，需要做的操作(进入主界面，下载数据)
             String UserID=sp.getString("UserID","11111111111");
             Intent intent=new Intent(this,MainActivity.class);
             intent.putExtra("UserID",UserID);

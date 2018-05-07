@@ -30,11 +30,13 @@
 
             <ImageView
                 android:id="@+id/image_edit_person_info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"/>
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_person_grey_24dp"/>
             <TextView
                 android:id="@+id/load_image_info"
+                android:text="头像"
                 android:layout_below="@id/image_edit_person_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -96,6 +98,7 @@
                 android:text="性          别：" />
 
             <RadioGroup
+                android:id="@+id/rg_sex_edit_info"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:orientation="horizontal"
@@ -104,9 +107,11 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/rb_man_edit_sex"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
+                    android:checked="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="男"
@@ -115,9 +120,11 @@
                     android:background="@drawable/button_login_shape"/>
 
                 <RadioButton
+                    android:id="@+id/rb_woman_edit_sex"
                     android:layout_weight="1"
                     android:button="@null"
-                    android:background="@drawable/button_login_shape"
+                    android:checked="false"
+                    android:background="@drawable/radiobutton_unchecked_shape"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -148,13 +155,79 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/save_edit_person_info"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/button_login_shape"
-            android:text="保存"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="10dp"
+            android:background="#E3E3E3"/>
 
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/ll_location_edit_info"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="农场位置:"/>
+
+            <Spinner
+                android:id="@+id/spinner_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spinner_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spinner_county"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_farm_name_edit"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="农场名称："
+                android:gravity="center"
+                android:id="@+id/tv_farm_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/farm_name_print"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_farm_name"
+                android:visibility="visible"/>
+
+            <Spinner
+                android:id="@+id/farm_name_select"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/tv_farm_name"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"></Spinner>
+        </LinearLayout>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/save_edit_person_info"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_login_shape"
+        android:text="保存"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </RelativeLayout>
