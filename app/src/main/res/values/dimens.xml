@@ -3,4 +3,5 @@
     <dimen name="BottomNavigation_Height">50dp</dimen>
     <dimen name="Fragment_100">3dp</dimen>
     <dimen name="Top_Navigation_Height">50dp</dimen>
+    <dimen name="View_Dividing_line_height">1dp</dimen>
 </resources>

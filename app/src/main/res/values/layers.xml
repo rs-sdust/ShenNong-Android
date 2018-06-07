@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="layers">
+        <item>底图</item>
+        <item>长势</item>
+        <item>湿度</item>
+        <item>病害</item>
+        <item>虫害</item>
+        <item>产量</item>
+        <item>实况</item>
+    </string-array>
+</resources>

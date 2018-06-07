@@ -5,4 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="color_main">#51AD58</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_Dividing_line">#E3E3E3</color>
+    <color name="color_activity_background">#E3E3E3</color>
 </resources>

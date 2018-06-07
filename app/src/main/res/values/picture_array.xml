@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pictures">
+        <item>@mipmap/sun1</item>
+        <item>@mipmap/sun2</item>
+        <item>@mipmap/sun3</item>
+        <item>@mipmap/sun4</item>
+        <item>@mipmap/sun5</item>
+        <item>@mipmap/sun6</item>
+        <item>@mipmap/sun7</item>
+        <item>@mipmap/sun8</item>
+        <item>@mipmap/sun9</item>
+        <item>@mipmap/sun10</item>
+        <item>@mipmap/sun11</item>
+        <item>@mipmap/sun12</item>
+        <item>@mipmap/sun13</item>
+        <item>@mipmap/sun14</item>
+        <item>@mipmap/sun15</item>
+        <item>@mipmap/sun16</item>
+    </array>
+</resources>
