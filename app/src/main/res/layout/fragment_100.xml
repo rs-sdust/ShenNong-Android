@@ -1,95 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
 
-    <!--导航栏-->
+    <RelativeLayout
+        android:id="@+id/rl__tb_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
     <android.support.v7.widget.Toolbar
-        android:id="@+id/NavigaterBar_100"
+        android:id="@+id/tb_100"
         android:layout_width="match_parent"
         android:layout_height="@dimen/Top_Navigation_Height">
 
-        <TextView
-            android:id="@+id/MyFarm_100"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:text="我的农场"
-            android:textSize="25dp" />
-
-    </android.support.v7.widget.Toolbar>
-
-    <!--创建农场栏-->
-    <RelativeLayout
-        android:id="@+id/createfarm_100"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/Fragment_100"
-        android:layout_below="@+id/NavigaterBar_100"
-        >
-
+        <!--第一栏-->
         <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/create_100"
-                android:layout_width="220dp"
-                android:layout_height="30dp"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:background="#ffff"
-                android:text="创建我的农场"
-                android:textSize="20dp" />
+            <ImageView
+                android:background="@drawable/ic_place_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <TextView
+                android:id="@+id/tv_position_city_100"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="6dp"
-                android:text="创建完成后会显示预警信息"
-                android:textSize="18dp" />
+                android:text="未知"
+                android:textSize="20dp"
+                android:textColor="@color/color_white"/>
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/tv_farm_name_100"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的农场"
+            android:textSize="20dp"
+            android:textColor="@color/color_white"/>
+
+        <!--新建地块-->
+        <ImageView
+            android:id="@+id/iv_add_farm_100"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_add_black_24dp"/>
+    </android.support.v7.widget.Toolbar>
+
     </RelativeLayout>
 
-    <!--生成报告-->
-    <RelativeLayout
-        android:id="@+id/rl_makeReport_100"
-        android:layout_width="match_parent"
+
+    <!--左上角-->
+    <LinearLayout
+        android:id="@+id/ll_weather_100"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/rl__tb_100"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="@dimen/Fragment_100">
+        >
 
-        <Button
-            android:id="@+id/makeReport_100"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_centerInParent="true"
-            android:background="#00ff00"
-            android:text="生成报告"/>
-    </RelativeLayout>
+        <!--第二栏-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <RelativeLayout
-        android:layout_marginTop="@dimen/Fragment_100"
-        android:layout_below="@id/createfarm_100"
-        android:layout_above="@id/rl_makeReport_100"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_date_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年月日"
+                android:textColor="@color/color_white"
+                />
 
-        <GridView
-            android:id="@+id/gridview_100"
+            <TextView
+                android:id="@+id/tv_week_100"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="周几"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:id="@+id/tv_lunar_calendar_100"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="农历"
+                android:textColor="@color/color_white"/>
+        </LinearLayout>
+
+        <!--第三栏-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_temperature_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度"
+                android:textSize="40dp"
+                android:textColor="@color/color_white"
+                />
+
+            <TextView
+                android:id="@+id/tv_weather_100"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天气"
+                android:textColor="@color/color_white"/>
+
+        </LinearLayout>
+
+        <!--第四栏-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_wind_direction_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="风向"
+                android:textColor="@color/color_white"
+                />
+
+            <TextView
+                android:id="@+id/tv_wind_power_100"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="风力"
+                android:textColor="@color/color_white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--农场简报-->
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/tv_report_title_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="农场简报"
+            android:textSize="20dp"
+            android:textColor="@color/color_white"/>
+
+        <TextView
+            android:id="@+id/tv_report_detail_100"
+            android:text="农场简报--细节"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:numColumns="3"
-            android:layout_marginBottom="@dimen/Fragment_100"
-            android:layout_marginTop="@dimen/Fragment_100">
-        </GridView>
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"/>
 
-    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_enter_farm_100"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_enter_to_farm_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                />
+            <TextView
+                android:id="@+id/tv_enter_to_farm_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进入我的农场"
+                android:textColor="@color/color_white"/>
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

@@ -3,9 +3,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hello"
-        android:layout_centerInParent="true"/>
+    <RelativeLayout
+        android:id="@+id/rl_information_400"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/color_main">
+
+        <ImageView
+            android:id="@+id/iv_my_info"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_person_grey_24dp"/>
+        <TextView
+            android:layout_below="@id/iv_my_info"
+            android:layout_marginLeft="30dp"
+            android:text="我的信息"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_400_1"
+        android:layout_below="@id/rl_information_400"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#E3E3E3"/>
+
+    <ListView
+        android:id="@+id/listview_info_400"
+        android:layout_below="@id/view_400_1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"></ListView>
+
 </RelativeLayout>

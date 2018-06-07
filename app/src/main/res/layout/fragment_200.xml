@@ -7,24 +7,23 @@
     <Button
         android:id="@+id/MyFarm_200"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/Top_Navigation_Height"
         android:gravity="center"
         android:text="农情监测"
-        android:textColor="#E3E3E3"
+        android:textColor="#FFFFFF"
         android:background="@android:color/transparent"
         android:textSize="20dp" />
 
     <org.osmdroid.views.MapView
         android:id="@+id/map_200"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </org.osmdroid.views.MapView>
+        android:layout_height="match_parent"></org.osmdroid.views.MapView>
 
     <RelativeLayout
         android:id="@+id/rl_photo_200"
-        android:layout_above="@id/rl_locaton_200"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_zoom_200">
 
         <ImageView
             android:id="@+id/iv_photo_200"
@@ -32,43 +31,69 @@
             android:layout_height="35dp"
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="15dp"
-            android:src="@drawable/ic_add_a_photo_black_24dp"
-            android:background="@drawable/button_shape_200"/>
+            android:background="@drawable/button_shape_200"
+            android:src="@drawable/ic_add_a_photo_black_24dp" />
 
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_zoom_200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_locaton_200"
+        >
+
+        <ImageView
+            android:id="@+id/iv_zoom_200"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/button_shape_200"
+            android:src="@drawable/ic_fullscreen_black_24dp" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/rl_locaton_200"
-        android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
 
         <ImageView
-        android:id="@+id/iv_location_200"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="50dp"
+            android:id="@+id/iv_location_200"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="50dp"
             android:layout_marginLeft="15dp"
-        android:src="@drawable/ic_my_location_black_24dp"
-        android:background="@drawable/button_shape_200"/>
+            android:background="@drawable/button_shape_200"
+            android:src="@drawable/ic_my_location_black_24dp" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/rl_spinner_layer_200"
-        android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <Spinner
-        android:id="@+id/spinner_image_layers_200"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="50dp"
-        android:layout_marginRight="15dp"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:entries="@array/layers"
-        android:spinnerMode="dialog"
-        android:background="@drawable/button_login_shape"></Spinner>
+            android:id="@+id/spinner_image_layers_200"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spinner_shape_200"
+            android:entries="@array/layers"
+            android:spinnerMode="dialog"></Spinner>
     </RelativeLayout>
 
+
+    <RelativeLayout
+        android:id="@+id/rl_gradeview"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+       ></RelativeLayout>
 </RelativeLayout>

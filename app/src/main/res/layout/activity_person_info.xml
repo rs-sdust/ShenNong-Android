@@ -11,7 +11,7 @@
         <RelativeLayout
             android:id="@+id/rl_edit_person_info"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/Top_Navigation_Height"
             android:background="@color/color_main">
 
             <TextView
@@ -20,7 +20,7 @@
                 android:layout_centerInParent="true"
                 android:text="编辑个人资料"
                 android:textColor="#FFFFFF"
-                android:textSize="25dp" />
+                android:textSize="18dp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -60,9 +60,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="请输入姓名"
+                android:background="@null"
                 android:layout_weight="1"/>
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/View_Dividing_line_height"
+            android:background="@color/color_Dividing_line"/>
 
         <LinearLayout
             android:id="@+id/ll_phone_edit_info"
@@ -84,55 +90,10 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/ll_sex_edit_info"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp"
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="性          别：" />
-
-            <RadioGroup
-                android:id="@+id/rg_sex_edit_info"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:id="@+id/rb_man_edit_sex"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:checked="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="男"
-                    android:gravity="center"
-                    android:button="@null"
-                    android:background="@drawable/button_login_shape"/>
-
-                <RadioButton
-                    android:id="@+id/rb_woman_edit_sex"
-                    android:layout_weight="1"
-                    android:button="@null"
-                    android:checked="false"
-                    android:background="@drawable/radiobutton_unchecked_shape"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="女"/>
-
-            </RadioGroup>
-
-        </LinearLayout>
+            android:layout_height="@dimen/View_Dividing_line_height"
+            android:background="@color/color_Dividing_line"/>
 
         <LinearLayout
             android:id="@+id/ll_degree_edit_info"
@@ -194,6 +155,11 @@
             </Spinner>
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/View_Dividing_line_height"
+            android:background="@color/color_Dividing_line"/>
+
         <LinearLayout
             android:id="@+id/ll_farm_name_edit"
             android:layout_marginTop="5dp"
@@ -209,25 +175,35 @@
 
             <EditText
                 android:id="@+id/farm_name_print"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/tv_farm_name"
-                android:visibility="visible"/>
+                android:visibility="visible"
+                android:layout_weight="1"/>
 
             <Spinner
                 android:id="@+id/farm_name_select"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_toRightOf="@id/tv_farm_name"
                 android:layout_height="wrap_content"
-                android:visibility="invisible"></Spinner>
+                android:visibility="gone"
+                android:layout_weight="1"></Spinner>
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/View_Dividing_line_height"
+            android:background="@color/color_Dividing_line"/>
+
     </LinearLayout>
 
     <Button
         android:id="@+id/save_edit_person_info"
         android:layout_alignParentBottom="true"
         android:background="@drawable/button_login_shape"
-        android:text="保存"
+        android:text="保   存"
+        android:textSize="18dp"
+        android:textColor="@color/color_white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </RelativeLayout>

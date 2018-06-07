@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_upload_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍照"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_context"
+        android:layout_below="@id/tb_upload_photo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--三张图片-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_photo_1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <ImageView
+                android:id="@+id/iv_photo_2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/iv_photo_3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#E3E3E3"/>
+
+        <!--选择地块-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_upload_photo_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="该点所处位置: "/>
+
+            <LinearLayout
+                android:layout_toRightOf="@id/tv_upload_photo_5"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinner_choose_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </Spinner>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#E3E3E3"/>
+
+        <!--作物长势-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_upload_photo_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="该处作物长势"/>
+
+            <LinearLayout
+                android:layout_below="@id/tv_upload_photo_1"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rg_plant_states"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_plant_state_good"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="好"
+                        android:gravity="center"
+                        android:background="@drawable/button_login_shape"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        android:id="@+id/rb_plant_state_mid"
+                        android:layout_width="0dp"
+                        android:button="@null"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="fill_parent"
+                        android:text="中"
+                        android:gravity="center"
+                        android:background="@drawable/radiobutton_unchecked_shape"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        android:id="@+id/rb_plant_state_bad"
+                        android:layout_width="0dp"
+                        android:button="@null"
+                        android:text="差"
+                        android:gravity="center"
+                        android:background="@drawable/radiobutton_unchecked_shape"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#E3E3E3"/>
+
+        <!--土壤湿度-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_upload_photo_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="该处土壤湿度"/>
+
+            <LinearLayout
+                android:layout_below="@id/tv_upload_photo_2"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/rg_soil_moisture"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_soil_moisture_good"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:text="湿润"
+                        android:gravity="center"
+                        android:background="@drawable/button_login_shape"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        android:id="@+id/rb_soil_moisture_mid"
+                        android:layout_width="0dp"
+                        android:button="@null"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="fill_parent"
+                        android:text="适中"
+                        android:gravity="center"
+                        android:background="@drawable/radiobutton_unchecked_shape"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        android:id="@+id/rb_soil_moisture_bad"
+                        android:layout_width="0dp"
+                        android:button="@null"
+                        android:text="干旱"
+                        android:gravity="center"
+                        android:background="@drawable/radiobutton_unchecked_shape"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#E3E3E3"/>
+
+        <!--病害-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_upload_photo_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="该处是否有病害"/>
+
+            <LinearLayout
+                android:layout_below="@id/tv_upload_photo_3"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_disease"
+                android:layout_toRightOf="@id/tv_upload_photo_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Spinner>
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#E3E3E3"/>
+
+        <!--虫害-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_upload_photo_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="该处是否有虫害"/>
+
+            <Spinner
+                android:id="@+id/spinner_pest"
+                android:layout_toRightOf="@id/tv_upload_photo_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+            <LinearLayout
+                android:layout_below="@id/tv_upload_photo_4"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="#E3E3E3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/ll_context"
+        android:layout_above="@id/btn_upload_photo"/>
+
+    <Button
+        android:id="@+id/btn_upload_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_main"
+        android:text="完成"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

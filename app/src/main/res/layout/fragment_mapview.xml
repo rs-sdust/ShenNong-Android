@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></org.osmdroid.views.MapView>
+
+    <ImageView
+        android:id="@+id/iv_fullscreen"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_fullscreen_black_24dp"
+        android:background="@drawable/button_shape_200"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+</RelativeLayout>
