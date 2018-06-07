@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E3E3">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_field_property"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Top_Navigation_Height">
+
+            <TextView
+                android:id="@+id/tv_baseline_provider"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="地块详情"
+                android:textSize="18dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Top_Navigation_Height">
+        <ImageView
+            android:id="@+id/iv_delete_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_delete_black_24dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_share_edit_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Top_Navigation_Height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_edit_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_mode_edit_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="编辑地块"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#E3E3E3" />
+
+        <LinearLayout
+            android:id="@+id/ll_share_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_share_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="分享地块"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ll_share_edit_bottom_menu"
+        android:layout_below="@id/tb_field_property"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <org.osmdroid.views.MapView
+                android:id="@+id/mv_properties"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"></org.osmdroid.views.MapView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="地块名称:" />
+
+                    <TextView
+                        android:id="@+id/tv_field_name_properties"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="种植作物:" />
+
+                    <TextView
+                        android:id="@+id/tv_crop_type_properties"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="面          积:" />
+
+                    <TextView
+                        android:id="@+id/tv_area_properties"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--物候期-->
+            <LinearLayout
+                android:background="@drawable/ll_text_field_property_shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp">
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_main" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="物候期"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_seed_date_till_now"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_phenophase"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_phenophase"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/tv_phenophase_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <ProgressBar
+                            android:id="@+id/progress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <!--<RelativeLayout-->
+                            <!--android:id="@+id/rl_container"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="10dp"></RelativeLayout>-->
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--物候期介绍-->
+            <LinearLayout
+                android:background="@drawable/ll_text_field_property_shape"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp">
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_main" />
+
+                    <TextView
+                        android:id="@+id/tv_phenophase2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="物候期"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_phenophase_introduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

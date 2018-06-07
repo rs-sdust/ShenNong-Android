@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <!--<ImageView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/ic_person_grey_24dp"/>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_description_task"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/tv_date_task"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:paddingRight="5dp"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_agree_task"
+            android:text="同意"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_reject_task"
+            android:text="拒绝"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

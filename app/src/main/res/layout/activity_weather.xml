@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scene_preview">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_activity_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="天气详情"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <!--画一下今天天气的东西-->
+    <RelativeLayout
+        android:id="@+id/rl_today_weather_details"
+        android:layout_below="@id/tb_activity_weather"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_temperature_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/tv_weather_now"
+            android:layout_toRightOf="@id/tv_temperature_now"
+            android:layout_marginLeft="50dp"
+            android:layout_alignBaseline="@id/tv_temperature_now"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_wind_now"
+            android:layout_below="@id/tv_temperature_now"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_other_weather"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/rl_today_weather_details"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_show_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本周天气："
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"/>
+
+
+        <!--折线图-->
+        <RelativeLayout
+            android:id="@+id/rl_chart_weather"
+            android:layout_below="@id/tv_show_tips"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

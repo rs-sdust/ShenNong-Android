@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Top_Navigation_Height">
+        <TextView
+            android:text="意见反馈"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/et_opinion"
+        android:background="@drawable/editview_feedback_shape"
+        android:hint="请写下您的意见......"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <ImageView
+        android:id="@+id/iv_take_pictrue"
+        android:layout_margin="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <Button
+        android:id="@+id/btn_feedback"
+        android:background="@color/color_main"
+        android:text="提交"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Top_Navigation_Height" />
+</LinearLayout>

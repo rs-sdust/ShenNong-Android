@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_fields_map"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Top_Navigation_Height">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RadioGroup
+                android:id="@+id/rg_fields_map"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/rb_show_fiels"
+                    android:button="@null"
+                    android:text="地块"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radiobutton_top_left_checked_shape"/>
+                <RadioButton
+                    android:id="@+id/rb_show_map"
+                    android:button="@null"
+                    android:text="地图"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radiobutton_top_right_uncheck_shape"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_add_farm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/ic_add_black_24dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_below="@id/tb_fields_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        >
+    </FrameLayout>
+
+</RelativeLayout>
