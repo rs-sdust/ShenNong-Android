@@ -8,6 +8,7 @@ import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -24,6 +25,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.xz.shangde.CalendarUtil;
 import com.xz.shangde.Farm;
 import com.xz.shangde.FrameAnimation;
@@ -53,7 +55,6 @@ public class Fragment100 extends Fragment {
 
     //    private Context context;
 
-    private AnimationDrawable anim;
     private ImageView iv_show_background_100;
 
     //左上角
@@ -170,6 +171,23 @@ public class Fragment100 extends Fragment {
 //                Log.i("TAG", "repeat");
 //            }
 //        });
+
+        iv_show_background_100=view.findViewById(R.id.iv_background);
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        //**这个属性很重要，是否支持缩放，false不支持缩放，就是图片按原比例展示**
+        options.inScaled = false;
+        //**设置图片比率，1是1/1、2是1/2、3是1/3,设置该参数会影响图片的质量**
+        options.inSampleSize =1;
+
+        //**使用RGB_565可以比系统默认RGB_888内存再减少1倍，会损失部分精度，测试看效果肉眼看不出来差距**
+
+        options.inPreferredConfig = Bitmap.Config.RGB_565;
+        Bitmap img =BitmapFactory.decodeResource(getResources(),R.mipmap.background,options);
+        Drawable drawable = new BitmapDrawable(img);
+//        iv_show_background_100.setBackground(drawable);
+        Glide.with(getContext())
+                .load(drawable)
+                .into(iv_show_background_100);
 
         ll_weather_100 = view.findViewById(R.id.ll_weather_100);
         tv_position_city_100 = view.findViewById(R.id.tv_position_city_100);
