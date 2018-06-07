@@ -18,17 +18,6 @@ android {
     }
 }
 
-// 添加插件
-apply plugin: 'com.mob.sdk'
-
-// 在MobSDK的扩展中注册SMSSDK的相关信息
-MobSDK {
-    appKey "2560586b2f675"
-    appSecret "4eea6e260fa701c24b1f51e1d1987df4"
-
-    SMSSDK {}
-}
-
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:support-v4:26.1.0'
@@ -40,4 +29,20 @@ dependencies {
     compile 'org.osmdroid:osmdroid-android:6.0.1'
     compile 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation project(':wx')
+
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation ("com.github.bumptech.glide:glide:4.6.1") {
+        exclude group: "com.android.support"
+    }
+}
+
+// 添加插件
+apply plugin: 'com.mob.sdk'
+
+// 在MobSDK的扩展中注册SMSSDK的相关信息
+MobSDK {
+    appKey "2560586b2f675"
+    appSecret "4eea6e260fa701c24b1f51e1d1987df4"
+
+    SMSSDK {}
 }
