@@ -3,6 +3,7 @@ package com.xz.shangde.UI;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.AssetManager;
@@ -12,6 +13,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -95,7 +97,6 @@ public class EditInfoActivity extends Activity {
 
     private Dialog dialog;
 
-    //todo 这个玩意干啥用来着？
     private boolean select_changed = false;
     //存储获取的附近农场的信息
     private ArrayList<String> farm_name = new ArrayList<>();
@@ -107,6 +108,7 @@ public class EditInfoActivity extends Activity {
     private final int MSE_UPLOAD_SUCCESS = 4;
     private final int MSE_UPLOAD_FAILED = 5;
     private final int MSE_PHARSE_SUCCESS = 6;
+    private final int MSE_CREATED_TASK_SUCCESS=7;
     private Handler mhandle = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -132,6 +134,11 @@ public class EditInfoActivity extends Activity {
                     ArrayAdapter adapter = new ArrayAdapter(context, android.R.layout.simple_spinner_item, province_name);
                     spinner_province.setAdapter(adapter);
                     spinner_province.setSelection(province_index, true);
+                    break;
+                case MSE_CREATED_TASK_SUCCESS:
+                    AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                    builder.setTitle("请等待");
+                    builder.setMessage("您的申请已上传，请稍候重试");//提示内容
                     break;
             }
         }
@@ -338,6 +345,7 @@ public class EditInfoActivity extends Activity {
                     }
                 } else {
                     //todo 如果选择“农场管理人员”，要判断是否选择农场
+                    upload();
                 }
 
             }
@@ -864,7 +872,7 @@ public class EditInfoActivity extends Activity {
                 JSONObject jsonObject=new JSONObject(msg);
                 boolean status=jsonObject.getBoolean("status");
                 if (status){
-                    //成功
+                    mhandle.obtainMessage(MSE_CREATED_TASK_SUCCESS).sendToTarget();
                 }
             }
         } catch (IOException e) {
