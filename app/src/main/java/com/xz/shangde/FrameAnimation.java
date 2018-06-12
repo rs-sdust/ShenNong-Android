@@ -7,6 +7,7 @@ import android.widget.ImageView;
  * 测试帧动画的类，占用内存太高，已废弃
  */
 
+@Deprecated
 public class FrameAnimation {
 
     private boolean mIsRepeat;
