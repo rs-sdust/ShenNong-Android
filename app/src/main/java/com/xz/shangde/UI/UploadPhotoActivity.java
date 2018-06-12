@@ -476,7 +476,7 @@ public class UploadPhotoActivity extends AppCompatActivity {
         }
     }
 
-    //上传图片到云空间
+    //上传图片到云空间，POST方法，所用接口：UploadPicture/PostUpload
     public ArrayList<String> uploadPhoto(String[] picture_path, final int ID, final String gps){
         ShangdeApplication application= (ShangdeApplication) getApplication();
         String url=application.getURL();

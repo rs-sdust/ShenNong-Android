@@ -11,6 +11,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.VideoView;
 
 import com.xz.shangde.R;
@@ -23,6 +24,7 @@ import com.xz.shangde.R;
 public class NewsPageActivity extends AppCompatActivity {
 
     private Toolbar tb_news_page;
+    private ImageView iv_back_news_page;
     private WebView webview_news;
     private String URL;
 
@@ -36,19 +38,15 @@ public class NewsPageActivity extends AppCompatActivity {
 
         tb_news_page=findViewById(R.id.tb_news_page);
         webview_news=findViewById(R.id.webview_news);
-
-        setSupportActionBar(tb_news_page);
-        //关键下面两句话，设置了回退按钮，及点击事件的效果
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        tb_news_page.setNavigationOnClickListener(new View.OnClickListener() {
+        iv_back_news_page=findViewById(R.id.iv_back_news_page);
+        iv_back_news_page.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
 
-
+        //todo 网页还不能播放视频
         WebSettings webSettings = webview_news.getSettings();
         webSettings.setJavaScriptEnabled(true);
         //设置自适应屏幕，两者合用

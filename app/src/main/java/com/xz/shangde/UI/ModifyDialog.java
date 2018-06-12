@@ -64,10 +64,13 @@ public class ModifyDialog extends Dialog {
         super.setContentView(view);
     }
 
+    //获取到作物种类的spinner的对象
     public Spinner getSpinner_modify_crop_type(){return spinner_modify_crop_type;}
 
+    //获取到种植时间的DatePicker的对象
     public DatePicker getDatepicker_modify(){return datepicker_modify;}
 
+    //设置确定按钮的监听
     public void setOnClickCommitListener(View.OnClickListener listener){
         btn_commit.setOnClickListener(listener);
     }

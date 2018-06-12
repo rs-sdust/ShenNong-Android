@@ -132,6 +132,7 @@ public class FieldsActivity extends AppCompatActivity {
         });
     }
 
+    //初始化RadioGroup并添加监听
     public void initRadioGroup(){
         rg_fields_map.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

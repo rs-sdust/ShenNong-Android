@@ -149,48 +149,48 @@ public class Fragment100 extends Fragment {
     }
 
     public void initView(View view) {
-//        iv_show_background_100 = view.findViewById(R.id.iv_show_background_100);
-        //        iv_show_background_100.setImageBitmap(decodeSampledBitmapFromResource
-        // (getResources(),R.drawable.background,450,800));
-        //        anim = (AnimationDrawable) iv_show_background_100.getDrawable();
-        //        anim.start();
+        /*
+        //测试动画的方法，已被放弃
+        iv_show_background_100 = view.findViewById(R.id.iv_show_background_100);
+                iv_show_background_100.setImageBitmap(decodeSampledBitmapFromResource
+         (getResources(),R.drawable.background,450,800));
+                anim = (AnimationDrawable) iv_show_background_100.getDrawable();
+                anim.start();
 
-        //        int[] pictrues=getResources().getIntArray(R.array.pictures);
-//        FrameAnimation frameAnimation = new FrameAnimation(iv_show_background_100, getRes(), 100,
-//                true);
-//        frameAnimation.setAnimationListener(new FrameAnimation.AnimationListener() {
-//            @Override
-//            public void onAnimationStart() {
-//                Log.i("TAG", "start");
-//            }
-//
-//            @Override
-//            public void onAnimationEnd() {
-//                Log.i("TAG", "end");
-//            }
-//
-//            @Override
-//            public void onAnimationRepeat() {
-//                Log.i("TAG", "repeat");
-//            }
-//        });
+                int[] pictrues=getResources().getIntArray(R.array.pictures);
+        FrameAnimation frameAnimation = new FrameAnimation(iv_show_background_100, getRes(), 100,
+                true);
+        frameAnimation.setAnimationListener(new FrameAnimation.AnimationListener() {
+            @Override
+            public void onAnimationStart() {
+                Log.i("TAG", "start");
+            }
 
+            @Override
+            public void onAnimationEnd() {
+                Log.i("TAG", "end");
+            }
+
+            @Override
+            public void onAnimationRepeat() {
+                Log.i("TAG", "repeat");
+            }
+        });
+        */
+
+        //显示背景图并对其进行压缩
         iv_show_background_100=view.findViewById(R.id.iv_background);
         BitmapFactory.Options options = new BitmapFactory.Options();
-        //**这个属性很重要，是否支持缩放，false不支持缩放，就是图片按原比例展示**
+        //这个属性很重要，是否支持缩放，false不支持缩放，就是图片按原比例展示
         options.inScaled = false;
-        //**设置图片比率，1是1/1、2是1/2、3是1/3,设置该参数会影响图片的质量**
+        //设置图片比率，1是1/1、2是1/2、3是1/3,设置该参数会影响图片的质量
         options.inSampleSize =1;
-
-        //**使用RGB_565可以比系统默认RGB_888内存再减少1倍，会损失部分精度，测试看效果肉眼看不出来差距**
-
+        //使用RGB_565可以比系统默认RGB_888内存再减少1倍，会损失部分精度，测试看效果肉眼看不出来差距
         options.inPreferredConfig = Bitmap.Config.RGB_565;
         Bitmap img =BitmapFactory.decodeResource(getResources(),R.mipmap.background,options);
         Drawable drawable = new BitmapDrawable(img);
-//        iv_show_background_100.setBackground(drawable);
-        Glide.with(getContext())
-                .load(drawable)
-                .into(iv_show_background_100);
+        iv_show_background_100.setBackground(drawable);
+
 
         ll_weather_100 = view.findViewById(R.id.ll_weather_100);
         tv_position_city_100 = view.findViewById(R.id.tv_position_city_100);
@@ -214,6 +214,7 @@ public class Fragment100 extends Fragment {
         county = sp.getString("County", "德城区");
     }
 
+    //下载天气数据并保存
     public void initWeather() {
         futureWeatherDateList = new ArrayList<>();
         new Thread(new Runnable() {
@@ -418,6 +419,8 @@ public class Fragment100 extends Fragment {
         }.start();
     }
 
+    @Deprecated
+    //通过尺寸计算图片大小
     public static int calculateInSampleSize(BitmapFactory.Options options,
                                             int reqWidth, int reqHeight) {
         // 源图片的高度和宽度
@@ -435,6 +438,8 @@ public class Fragment100 extends Fragment {
         return inSampleSize;
     }
 
+    @Deprecated
+    //通过资源路径来转换为bitmap
     public static Bitmap decodeSampledBitmapFromResource(Resources res, int resId,
                                                          int reqWidth, int reqHeight) {
         // 第一次解析将inJustDecodeBounds设置为true，来获取图片大小
@@ -448,6 +453,8 @@ public class Fragment100 extends Fragment {
         return BitmapFactory.decodeResource(res, resId, options);
     }
 
+    @Deprecated
+    //通过文件地址来转换为bitmap
     public static Bitmap decodeSampledBitmapFromFilePath(String imagePath,
                                                          int reqWidth, int reqHeight) {
         // 第一次解析将inJustDecodeBounds设置为true，来获取图片大小
@@ -479,7 +486,7 @@ public class Fragment100 extends Fragment {
                 JSONObject data=new JSONObject(msg);
                 boolean status=data.getBoolean("status");
                 if (status){
-                    //根据传过来的格式获取简报信息并通过handler显示
+                    //todo 根据传过来的格式获取简报信息并通过handler显示
                     mhandler.obtainMessage(MSE_REPORT_SUCCESS,msg).sendToTarget();
                 }
                 }

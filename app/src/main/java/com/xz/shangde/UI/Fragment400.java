@@ -90,6 +90,4 @@ public class Fragment400 extends Fragment {
         item_name.add("联系客服");
         item_name.add("设置");
     }
-
-
 }

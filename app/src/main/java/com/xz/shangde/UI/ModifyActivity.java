@@ -19,6 +19,7 @@ import java.util.ArrayList;
  * 批量修改分组时所用的dialog，停止使用，转而使用ModifyDialog
  */
 
+@Deprecated
 public class ModifyActivity extends AppCompatActivity {
 
     private ArrayList<String> crop_type;

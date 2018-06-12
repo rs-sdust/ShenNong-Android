@@ -244,6 +244,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //隐藏全部的Fragment（在已经添加的Fragment中）
     public void hideAllFragment(){
         FragmentTransaction fragmentTransaction=fm.beginTransaction();
         if (fragment100.isAdded()){
@@ -262,7 +263,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @SuppressLint("RestrictedApi")
-    //当底部元素数量多于三个时，会出现效果，去除此效果
+    //当底部元素数量多于三个时，会出现大小不一的效果，去除此效果
     public void disableShiftMode(BottomNavigationView view) {
         //获取子View BottomNavigationMenuView的对象
         BottomNavigationMenuView menuView = (BottomNavigationMenuView) view.getChildAt(0);
@@ -286,11 +287,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * 下载作物类型列表，GET方法，所用接口：Dic/GetCrops   ------done
-     * 下载病害类型列表，GET方法，所用接口：Dic/GetDiseaseType    -----done
-     * 下载虫害类型列表，GET方法，所用接口：Dic/GetPestType    -----done
-     * 下载资讯类型列表，GET方法，所用接口：Dic/GetNewsType    -----done
-     * 获取产品等级列表，GET方法，所用接口：Dic/GetRsiGrade    -----done
+     * 下载作物类型列表，GET方法，所用接口：Dic/GetCrops
+     * 下载病害类型列表，GET方法，所用接口：Dic/GetDiseaseType
+     * 下载虫害类型列表，GET方法，所用接口：Dic/GetPestType
+     * 下载资讯类型列表，GET方法，所用接口：Dic/GetNewsType
+     * 获取产品等级列表，GET方法，所用接口：Dic/GetRsiGrade
      */
     public void download(){
 

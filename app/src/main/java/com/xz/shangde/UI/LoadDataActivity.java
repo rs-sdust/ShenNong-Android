@@ -13,6 +13,7 @@ import com.xz.shangde.R;
  * 下载所有数据，并放置等待动画，已废弃
  */
 
+@Deprecated
 public class LoadDataActivity extends AppCompatActivity {
     private ImageView iv_wait;
 

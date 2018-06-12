@@ -92,6 +92,7 @@ public class FragmentFieldsList extends Fragment {
             }
         });
 
+        //刷新的方法，以后可以扩展这个功能
         btn_refresh_data=view.findViewById(R.id.btn_refresh_data);
         btn_refresh_data.setOnClickListener(new View.OnClickListener() {
             @Override

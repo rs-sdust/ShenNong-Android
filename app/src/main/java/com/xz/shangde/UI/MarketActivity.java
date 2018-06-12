@@ -21,5 +21,6 @@ public class MarketActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_market);
+        //todo 根据市场的数据再行决定怎样绘制折线图
     }
 }

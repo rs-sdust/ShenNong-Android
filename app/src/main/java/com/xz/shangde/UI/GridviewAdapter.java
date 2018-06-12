@@ -19,6 +19,7 @@ import com.xz.shangde.R;
  * 最初的fragment100方案设计，已放弃
  */
 
+@Deprecated
 public class GridviewAdapter extends BaseAdapter {
 
     Context context;

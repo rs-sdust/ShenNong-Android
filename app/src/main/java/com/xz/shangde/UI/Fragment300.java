@@ -161,6 +161,7 @@ public class Fragment300 extends Fragment {
         }.start();
     }
 
+    //下载所有数据
     public void DownloadData(){
         progressBar_300.setVisibility(View.VISIBLE);
         new Thread(){
