@@ -115,11 +115,12 @@ public class LoginActivity extends Activity {
 
     }
 
+    //获取验证码
     public void getIdentifyCode(View view) {
         sendCode("86", phoneNumber.getText().toString());
         //修改按钮的样式
-        getIdentifyCode.setText("请稍后");
-        getIdentifyCode.setBackgroundResource(R.drawable.editview_login_shape);
+        getIdentifyCode.setText("请稍候");
+        getIdentifyCode.setBackgroundResource(R.drawable.button_has_get_identifycode_shape);
     }
 
     public void sendCode(String country, String phone) {

@@ -211,6 +211,7 @@ public class EditInfoActivity extends Activity {
         }
     }
 
+    //初始化省市县三级spinner
     public void initLocation() {
         updatelocatio update = new updatelocatio();
         update.execute();
@@ -302,6 +303,7 @@ public class EditInfoActivity extends Activity {
         });
     }
 
+    //初始化身份spinner并添加监听
     public void initDegree() {
         spinner_degree_edit_info.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
@@ -329,6 +331,7 @@ public class EditInfoActivity extends Activity {
         });
     }
 
+    //添加按钮监听，进行上传文件操作
     public void initUpload() {
         save_edit_person_info.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -619,6 +622,7 @@ public class EditInfoActivity extends Activity {
         }.start();
     }
 
+    //将数据保存到SharedPreferences
     public void saveSP() {
         SharedPreferences.Editor sp_editor = sp.edit();
         sp_editor.putString("Name", String.valueOf(et_name_edit_info.getText()));
@@ -714,6 +718,7 @@ public class EditInfoActivity extends Activity {
         }
     }
 
+    //显示附近农场信息
     public void ShowNearbyFarm() {
         ArrayAdapter adapter = new ArrayAdapter<String>(context, android.R.layout.simple_spinner_item, farm_name);
         farm_name_select.setAdapter(adapter);
@@ -775,6 +780,7 @@ public class EditInfoActivity extends Activity {
         }
     }
 
+    //将数据保存在本地，更新application
     public void saveUserLocally(String token,int id,String name,String mobile,String paw,int role,int farm,String icon){
         SharedPreferences sp=getSharedPreferences("User",Context.MODE_PRIVATE);
         SharedPreferences.Editor sp_editor=sp.edit();
@@ -796,6 +802,7 @@ public class EditInfoActivity extends Activity {
         application.setUser(user);
     }
 
+    //创建农场，POST方法，所用接口：Farm/CreatFarm
     public void CreateFarm(String name,String address){
         Log.i("TAG","create farm");
         ShangdeApplication application= (ShangdeApplication) getApplication();
@@ -850,6 +857,7 @@ public class EditInfoActivity extends Activity {
         }
     }
 
+    //创建申请加入农场任务，POST方法，所用接口：Task/CreateTask
     public void CreateTask(int creator_id,int farm_id,int type,String description){
         ShangdeApplication application= (ShangdeApplication) getApplication();
         String url=application.getURL();

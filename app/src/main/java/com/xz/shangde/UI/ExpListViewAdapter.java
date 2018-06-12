@@ -74,7 +74,7 @@ public class ExpListViewAdapter extends BaseExpandableListAdapter {
         parseFields();
     }
 
-    //解析文件
+    //解析地块的list，填充至field_parent和fields_child中
     public void parseFields(){
         List<Integer> listWithDuplicateElements=new ArrayList<>();
         for (int i=0;i<fields.size();i++){
@@ -178,7 +178,7 @@ public class ExpListViewAdapter extends BaseExpandableListAdapter {
             @Override
             public void onClick(View v) {
                 final int crop_before_change=field_parent.get(groupPosition);
-                //修改分组
+                //批量修改地块操作，修改这一组所有的地块
                 final ModifyDialog dialog = new ModifyDialog(context, "批量修改地块属性", null);
                 final Spinner spinner=dialog.getSpinner_modify_crop_type();
                 final DatePicker datePicker=dialog.getDatepicker_modify();
