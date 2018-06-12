@@ -29,6 +29,7 @@ import okhttp3.Response;
 
 public class FeedbackActivity extends AppCompatActivity {
     private Toolbar tb_feedback;
+    private ImageView iv_back_feedback;
     private EditText et_opinion;
     private ImageView iv_take_pictrue;
     private Button btn_feedback;
@@ -50,11 +51,8 @@ public class FeedbackActivity extends AppCompatActivity {
         iv_take_pictrue.setVisibility(View.INVISIBLE);
         btn_feedback=findViewById(R.id.btn_feedback);
 
-        setSupportActionBar(tb_feedback);
-        //关键下面两句话，设置了回退按钮，及点击事件的效果
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        tb_feedback.setNavigationOnClickListener(new View.OnClickListener() {
+        iv_back_feedback=findViewById(R.id.iv_back_feedback);
+        iv_back_feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

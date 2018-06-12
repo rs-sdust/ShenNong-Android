@@ -7,6 +7,11 @@
         android:id="@+id/tb_field_live"
         android:layout_width="match_parent"
         android:layout_height="@dimen/Top_Navigation_Height">
+        <ImageView
+            android:id="@+id/iv_back_fields_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_black"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,24 +30,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:orientation="horizontal">
             <ImageView
                 android:id="@+id/iv_fields_live"
-                android:background="@drawable/ic_add_a_photo_black_24dp"
+                android:background="@drawable/image_take_picture_shape"
                 android:layout_gravity="center"
+                android:layout_marginRight="5dp"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="100dp" />
             <ImageView
                 android:id="@+id/iv_fields_live2"
-                android:background="@drawable/ic_add_a_photo_black_24dp"
+                android:background="@drawable/image_take_picture_shape"
                 android:layout_gravity="center"
+                android:layout_marginRight="5dp"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="100dp" />
             <ImageView
                 android:id="@+id/iv_fields_live3"
-                android:background="@drawable/ic_add_a_photo_black_24dp"
+                android:background="@drawable/image_take_picture_shape"
                 android:layout_gravity="center"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -56,27 +64,39 @@
         <TextView
             android:id="@+id/tv_growth_field_live"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_black"
+            android:textSize="@dimen/Normal_Text_font"/>
         <TextView
             android:id="@+id/tv_moisture_field_live"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_black"
+            android:textSize="@dimen/Normal_Text_font"/>
         <TextView
             android:id="@+id/tv_disease_field_live"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_black"
+            android:textSize="@dimen/Normal_Text_font"/>
         <TextView
             android:id="@+id/tv_pest_field_live"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_black"
+            android:textSize="@dimen/Normal_Text_font"/>
         <TextView
             android:id="@+id/tv_collector_field_live"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_black"
+            android:textSize="@dimen/Normal_Text_font"/>
         <TextView
             android:id="@+id/tv_date_field_live"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_black"
+            android:textSize="@dimen/Normal_Text_font"/>
 
     </LinearLayout>
 </RelativeLayout>

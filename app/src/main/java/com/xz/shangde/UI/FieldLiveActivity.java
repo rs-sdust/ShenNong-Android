@@ -27,6 +27,7 @@ import org.json.JSONObject;
 public class FieldLiveActivity extends AppCompatActivity {
 
     private Toolbar tb_field_live;
+    private ImageView iv_back_fields_live;
     private ImageView iv_fields_live;
     private ImageView iv_fields_live2;
     private ImageView iv_fields_live3;
@@ -51,11 +52,8 @@ public class FieldLiveActivity extends AppCompatActivity {
 
     public void initView(){
         tb_field_live=findViewById(R.id.tb_field_live);
-        setSupportActionBar(tb_field_live);
-        //关键下面两句话，设置了回退按钮，及点击事件的效果
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        tb_field_live.setNavigationOnClickListener(new View.OnClickListener() {
+        iv_back_fields_live=findViewById(R.id.iv_back_fields_live);
+        iv_back_fields_live.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
