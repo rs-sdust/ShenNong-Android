@@ -63,6 +63,5 @@ public class ModifyActivity extends AppCompatActivity {
         Intent intent=getIntent();
         crop_type=intent.getStringArrayListExtra("crop_type");
         crop_index=intent.getIntExtra("crop_index",0);
-        //todo 获取数据
     }
 }

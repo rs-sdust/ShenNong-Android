@@ -78,7 +78,7 @@ public class UploadPhotoActivity extends AppCompatActivity {
     private Spinner spinner_diease;
     private Spinner spinner_pest;
     //记录选中的数据,从上到下顺序储存
-    //todo 注意此处，bitmap太大会引起oom，bitmaps_compression是已经压缩过了
+    //注意此处，bitmap太大会引起oom，bitmaps_compression是已经压缩过了
     private String[] data = null;
     private int[] grade=null;
     private ArrayList<Bitmap> bitmaps_compression=new ArrayList<>();
@@ -332,7 +332,7 @@ public class UploadPhotoActivity extends AppCompatActivity {
     }
 
     public void initSpinner(){
-        //todo 初始化地块数据
+        //初始化地块数据
         ParseFieldsData();
         ArrayAdapter<String> adapter_fields=
                 new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,fields_name);
@@ -476,7 +476,7 @@ public class UploadPhotoActivity extends AppCompatActivity {
         }
     }
 
-    //todo 上传图片到云空间
+    //上传图片到云空间
     public ArrayList<String> uploadPhoto(String[] picture_path, final int ID, final String gps){
         ShangdeApplication application= (ShangdeApplication) getApplication();
         String url=application.getURL();

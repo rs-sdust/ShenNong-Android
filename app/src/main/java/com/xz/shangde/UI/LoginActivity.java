@@ -143,8 +143,8 @@ public class LoginActivity extends Activity {
 
     public void load(View view) {
         progressbar_login.setVisibility(View.VISIBLE);
-//        submitCode("86", phoneNumber.getText().toString(), identifyCode.getText().toString());
-        testBackEnd(phoneNumber.getText().toString());
+        submitCode("86", phoneNumber.getText().toString(), identifyCode.getText().toString());
+//        testBackEnd(phoneNumber.getText().toString());
     }
 
     // 提交验证码，其中的code表示验证码，如“1357”
@@ -160,13 +160,12 @@ public class LoginActivity extends Activity {
                     new Thread() {
                         @Override
                         public void run() {
-                            Log.i("TAG", "thread run");
                             final ShangdeApplication application = (ShangdeApplication)
                                     getApplication();
                             final String url = application.getURL();
 
-                            //判断用户是否存在，GET方法,所用接口：User/IsExsit?mobile={mobile}
-                            String s = url + "User/IsExsit?mobile=" + phone;
+                            //判断用户是否存在，GET方法,所用接口：User/IsExist?mobile={mobile}
+                            String s = url + "User/IsExist?mobile=" + phone;
                             Log.i("TAG", s);
                             OkHttpClient client = new OkHttpClient();
                             Request request = new Request.Builder().url(s).build();
@@ -175,14 +174,10 @@ public class LoginActivity extends Activity {
                                 if (response.isSuccessful()) {
                                     Headers responseHeaders = response.headers();
                                     String Token = responseHeaders.get("Token");
-                                    Log.i("TAG", "Token:" + Token);
                                     String response_data = response.body().string();
                                     JSONObject jsonObject = new JSONObject(response_data);
-                                    Log.i("TAG", jsonObject.toString());
                                     String status = jsonObject.getString("status");
-                                    Log.i("TAG", "status:" + status);
                                     String msg = jsonObject.getString("msg");
-                                    Log.i("TAG", "msg:" + msg);
 
                                     SharedPreferences sp = getSharedPreferences("User", Context
                                             .MODE_PRIVATE);
@@ -191,21 +186,20 @@ public class LoginActivity extends Activity {
 
                                     if (Boolean.valueOf(status)) {
                                         //登陆成功，并下载用户数据（填充User类）
-                                        JSONArray data = jsonObject.getJSONArray("data");
+                                        JSONObject data = jsonObject.getJSONObject("data");
                                         Log.i("TAG", data.toString());
-                                        JSONObject data_user = data.getJSONObject(0);
-                                        int id = data_user.getInt("id");
-                                        String user_name = data_user.getString("name");
-                                        String psw = data_user.getString("psw");
-                                        int role = data_user.getInt("role");
-                                        int farm = data_user.getInt("farm");
-                                        String icon = data_user.getString("icon");
+                                        int id = data.getInt("id");
+                                        String user_name = data.getString("name");
+                                        String psw = data.getString("im_pwd");
+                                        int role = data.getInt("role");
+                                        int farm = data.getInt("farm");
+                                        String icon = data.getString("icon");
 
 
-                                        //拉取农场信息并保存，GET方法，所用接口：api/Farm/GetFarmbrief?farmid={farmid}
+                                        //拉取农场信息并保存，GET方法，所用接口：api/Farm/GetFarm?id={id}
                                         OkHttpClient client1 = new OkHttpClient();
                                         Request request1 = new Request.Builder().header("Token",
-                                                Token).url(url + "Farm/GetFarmbrief?farmid="
+                                                Token).url(url + "Farm/GetFarm?id="
                                                 + farm).build();
                                         Response response1 = client1.newCall(request1).execute();
                                         if (response1.isSuccessful()) {
@@ -214,27 +208,24 @@ public class LoginActivity extends Activity {
                                             Log.i("TAG", object_farm.toString());
                                             boolean status_farm = object_farm.getBoolean("status");
                                             if (status_farm) {
-                                                JSONArray data_array_farm = object_farm
-                                                        .getJSONArray("data");
-                                                JSONObject data_farm = data_array_farm
-                                                        .getJSONObject(0);
+                                                JSONObject data_farm = object_farm
+                                                        .getJSONObject("data");
+
                                                 int farm_id = data_farm.getInt("id");
                                                 String farm_name = data_farm.getString("name");
-                                                JSONObject object_farm_address = data_farm
-                                                        .getJSONObject("address");
 
-                                                String province_farm = object_farm_address
-                                                        .getString("province");
-                                                String city_farm = object_farm_address.getString
-                                                        ("city");
-                                                String county_farm = object_farm_address
-                                                        .getString("county");
-                                                int province_index_farm = object_farm_address
-                                                        .getInt("province_index");
-                                                int city_index_farm = object_farm_address.getInt
-                                                        ("city_index");
-                                                int county_index_farm = object_farm_address
-                                                        .getInt("county_index");
+                                                String address = data_farm.getString("address");
+                                                address = address.replace("{", "");
+                                                address = address.replace("}", "");
+                                                address = address.trim();
+                                                String[] address_array = address.split("[\\,]");
+
+                                                String province_farm = address_array[0];
+                                                String city_farm = address_array[1];
+                                                String county_farm = address_array[2];
+                                                int province_index_farm = 0;
+                                                int city_index_farm = 0;
+                                                int county_index_farm = 0;
 
                                                 sp_editor.putString("FarmName", farm_name);
                                                 sp_editor.putInt("FarmID", farm_id);
@@ -312,11 +303,11 @@ public class LoginActivity extends Activity {
         SMSSDK.submitVerificationCode(country, phone, code);
     }
 
+    //由于短信验证码次数有限，跳过验证码，测试后端代码
     public void testBackEnd(final String phone) {
         new Thread() {
             @Override
             public void run() {
-                Log.i("TAG", "thread run");
                 final ShangdeApplication application = (ShangdeApplication)
                         getApplication();
                 final String url = application.getURL();
@@ -372,18 +363,18 @@ public class LoginActivity extends Activity {
                                     int farm_id = data_farm.getInt("id");
                                     String farm_name = data_farm.getString("name");
 
-                                    String address=data_farm.getString("address");
-                                    address=address.replace("{","");
-                                    address=address.replace("}","");
-                                    address=address.trim();
-                                    String[] address_array=address.split("[\\,]");
+                                    String address = data_farm.getString("address");
+                                    address = address.replace("{", "");
+                                    address = address.replace("}", "");
+                                    address = address.trim();
+                                    String[] address_array = address.split("[\\,]");
 
-                                    String province_farm=address_array[0];
-                                    String city_farm=address_array[1];
-                                    String county_farm=address_array[2];
-                                    int province_index_farm=0;
-                                    int city_index_farm=0;
-                                    int county_index_farm=0;
+                                    String province_farm = address_array[0];
+                                    String city_farm = address_array[1];
+                                    String county_farm = address_array[2];
+                                    int province_index_farm = 0;
+                                    int city_index_farm = 0;
+                                    int county_index_farm = 0;
 
                                     sp_editor.putString("FarmName", farm_name);
                                     sp_editor.putInt("FarmID", farm_id);

@@ -344,7 +344,7 @@ public class EditInfoActivity extends Activity {
                         Toast.makeText(context, "请输入完整信息", Toast.LENGTH_LONG).show();
                     }
                 } else {
-                    //todo 如果选择“农场管理人员”，要判断是否选择农场
+                    //如果选择“农场管理人员”，要判断是否选择农场
                     upload();
                 }
 
@@ -445,7 +445,7 @@ public class EditInfoActivity extends Activity {
 
     //上传数据
     public void upload() {
-        //todo 上传数据
+        //上传数据
         new Thread() {
             @Override
             public void run() {
@@ -671,7 +671,7 @@ public class EditInfoActivity extends Activity {
                             //一切正常时的返回值
                             JSONArray data_array = msg.getJSONArray("data");
                             Log.i("TAG",data_array.toString());
-                            //todo 解析文件
+                            //解析文件
                             for (int i = 0; i < data_array.length(); i++) {
                                 JSONObject data_single = data_array.getJSONObject(i);
                                 int id = data_single.getInt("id");

@@ -178,7 +178,7 @@ public class ExpListViewAdapter extends BaseExpandableListAdapter {
             @Override
             public void onClick(View v) {
                 final int crop_before_change=field_parent.get(groupPosition);
-                //todo 修改分组
+                //修改分组
                 final ModifyDialog dialog = new ModifyDialog(context, "批量修改地块属性", null);
                 final Spinner spinner=dialog.getSpinner_modify_crop_type();
                 final DatePicker datePicker=dialog.getDatepicker_modify();

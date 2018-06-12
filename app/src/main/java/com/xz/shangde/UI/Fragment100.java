@@ -479,7 +479,7 @@ public class Fragment100 extends Fragment {
                 JSONObject data=new JSONObject(msg);
                 boolean status=data.getBoolean("status");
                 if (status){
-                    //todo 根据传过来的格式获取简报信息并通过handler显示
+                    //根据传过来的格式获取简报信息并通过handler显示
                     mhandler.obtainMessage(MSE_REPORT_SUCCESS,msg).sendToTarget();
                 }
                 }

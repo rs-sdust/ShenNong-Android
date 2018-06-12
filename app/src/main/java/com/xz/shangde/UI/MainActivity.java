@@ -70,13 +70,6 @@ public class MainActivity extends AppCompatActivity {
     private Fragment300 fragment300;
     private Fragment400 fragment400;
 
-    //todo 从网络上把这些数据下载下来,传递给application
-    private ArrayList<Field> fields;
-    private User user;
-    private Farm farm;
-    private ArrayList<String> crop_type;
-
-
     private final int MSG_SUCCESS=0;
     private final int MSG_FAIL=1;
     private final int MSE_AGREEED=2;
@@ -293,7 +286,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * todo
      * 下载作物类型列表，GET方法，所用接口：Dic/GetCrops   ------done
      * 下载病害类型列表，GET方法，所用接口：Dic/GetDiseaseType    -----done
      * 下载虫害类型列表，GET方法，所用接口：Dic/GetPestType    -----done

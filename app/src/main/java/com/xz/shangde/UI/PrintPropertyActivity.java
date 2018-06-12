@@ -272,7 +272,7 @@ public class PrintPropertyActivity extends AppCompatActivity {
                     //                            et_date_print_property.getText().toString());
                     //                    field.setCenterPoint(center_point);
                     if (FromActivity.equals("FieldPropertyActivity")) {
-                        //todo 通过application中的editField方法更改数据,之后上传到数据库
+                        //通过application中的editField方法更改数据,之后上传到数据库
                         Log.i("TAG", "FieldPropertyActivity");
                         new Thread() {
                             @Override
@@ -293,7 +293,7 @@ public class PrintPropertyActivity extends AppCompatActivity {
                             }
                         }.start();
                     } else if (FromActivity.equals("AddFarmActivity")) {
-                        //todo 转变为Field对象，上传数据，通过addField方法将field更新至application中
+                        //转变为Field对象，上传数据，通过addField方法将field更新至application中
                         Log.i("TAG", "add field");
                         new Thread() {
                             @Override
