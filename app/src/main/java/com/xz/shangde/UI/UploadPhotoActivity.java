@@ -53,11 +53,13 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/5/8.
+ * @author zxz
+ * 拍照上传并传递地块实况信息
  */
 
 public class UploadPhotoActivity extends AppCompatActivity {
     private Toolbar toolbar;
+    private ImageView iv_back_upload_photo;
     private ImageView iv_photo_1;
     private ImageView iv_photo_2;
     private ImageView iv_photo_3;
@@ -123,6 +125,13 @@ public class UploadPhotoActivity extends AppCompatActivity {
 
     public void initView() {
         toolbar = findViewById(R.id.tb_upload_photo);
+        iv_back_upload_photo=findViewById(R.id.iv_back_upload_photo);
+        iv_back_upload_photo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         iv_photo_1 = findViewById(R.id.iv_photo_1);
         iv_photo_2 = findViewById(R.id.iv_photo_2);
         iv_photo_3 = findViewById(R.id.iv_photo_3);

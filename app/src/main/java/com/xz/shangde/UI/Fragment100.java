@@ -48,7 +48,10 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/4/26.
+ * @author zxz
+ * MainActivity下的第一个fragment，对应于底部导航栏为“农场”
+ * 用于显示天气、提供添加地块接口、提供进入农场接口
+ * 提供农场简报（只留有接口，等待数据库的更新）
  */
 
 public class Fragment100 extends Fragment {

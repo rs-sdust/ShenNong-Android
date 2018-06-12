@@ -3,7 +3,8 @@ package com.xz.shangde;
 import java.io.Serializable;
 
 /**
- * Created by yxq on 2018/5/28.
+ * @author zxz
+ * 存储面积
  */
 
 public class Area implements Serializable{

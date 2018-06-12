@@ -3,7 +3,8 @@ package com.xz.shangde;
 import java.io.Serializable;
 
 /**
- * Created by yxq on 2018/5/24.
+ * @author zxz
+ * 存储新闻信息
  */
 
 public class News implements Serializable {

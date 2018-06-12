@@ -25,6 +25,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,7 +59,8 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/5/2.
+ * @author zxz
+ * 添加地块类，用于绘制地块
  */
 
 public class AddFarmActivity extends AppCompatActivity {
@@ -77,9 +79,9 @@ public class AddFarmActivity extends AppCompatActivity {
     private GeoPoint center_point;
     private Area area=new Area();
 
-    private Button btn_back_add;
+    private LinearLayout btn_back_add;
     private Button btn_finish_add;
-    private Button btn_repeat_add;
+    private LinearLayout btn_repeat_add;
     private TextView tv_tips_add_farm;
 
     private ImageView iv_location;

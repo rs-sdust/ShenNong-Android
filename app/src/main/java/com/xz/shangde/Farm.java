@@ -3,7 +3,8 @@ package com.xz.shangde;
 import java.io.Serializable;
 
 /**
- * Created by yxq on 2018/5/8.
+ * @author zxz
+ * 存储农场信息
  */
 
 public class Farm implements Serializable{

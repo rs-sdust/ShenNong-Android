@@ -1,49 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:background="#E3E3E3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="36dp"
+        android:background="#E3E3E3"
+        android:orientation="horizontal">
+
         <TextView
-            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
             android:text="总面积："
             android:textColor="#000000"
-            android:textSize="17dp"/>
+            android:textSize="@dimen/Normal_Text_font" />
+
         <TextView
             android:id="@+id/tv_area"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:textColor="#000000"
-            android:textSize="17dp"
-            />
+            android:textSize="@dimen/Normal_Text_font" />
+
         <TextView
-            android:layout_marginLeft="150px"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginLeft="150px"
+            android:gravity="center"
             android:text="田块个数："
             android:textColor="#000000"
-            android:textSize="17dp"/>
+            android:textSize="@dimen/Normal_Text_font" />
+
         <TextView
             android:id="@+id/tv_fields_number"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:textColor="#000000"
-            android:textSize="17dp"
-            />
+            android:textSize="@dimen/Normal_Text_font" />
     </LinearLayout>
 
-        <ExpandableListView
-            android:id="@+id/lv_expandable_fields"
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:descendantFocusability="blocksDescendants"></ExpandableListView>
+    <ExpandableListView
+        android:id="@+id/lv_expandable_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:descendantFocusability="blocksDescendants"></ExpandableListView>
 
     <Button
         android:id="@+id/btn_refresh_data"
@@ -51,6 +58,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:visibility="invisible"
-        android:text="刷新"/>
+        android:text="刷新"
+        android:visibility="invisible" />
 </LinearLayout>

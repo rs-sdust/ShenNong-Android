@@ -22,59 +22,61 @@
                 android:layout_centerInParent="true"
                 android:text="登陆"
                 android:textColor="#FFFFFF"
-                android:textSize="18dp" />
+                android:textSize="@dimen/Top_Navigation_Text_Font" />
         </RelativeLayout>
 
         <EditText
             android:id="@+id/et_PhoneNumber"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/editview_login_shape"
-            android:hint="请输入手机号"
             android:maxLength="11"
-             />
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="8dp"
             android:layout_marginTop="15dp"
             android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/et_IdentifyCode"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:layout_marginRight="20dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="33dp"
+                android:layout_weight="5"
                 android:background="@drawable/editview_login_shape"
-                android:hint="请输入验证码"
-                 />
+                />
 
             <Button
                 android:id="@+id/btn_getIdentifyCode"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:background="@drawable/button_login_shape"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_get_identifycode_shape"
                 android:text="获取验证码"
+                android:textSize="14sp"
                 android:onClick="getIdentifyCode" />
         </LinearLayout>
 
         <Button
             android:id="@+id/btn_load"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/button_login_shape"
             android:onClick="load"
             android:text="登  陆"
-            android:textSize="20dp"
+            android:textSize="16dp"
             android:textColor="#FFFFFF"
             />
 
@@ -82,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="3dp">
+            android:layout_marginTop="7dp">
 
             <TextView
                 android:layout_width="wrap_content"

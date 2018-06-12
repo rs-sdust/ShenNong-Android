@@ -8,6 +8,12 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/Top_Navigation_Height">
 
+        <ImageView
+            android:id="@+id/iv_back_fields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_black"/>
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_gravity="center"
@@ -22,18 +28,20 @@
                     android:id="@+id/rb_show_fiels"
                     android:button="@null"
                     android:text="地块"
-                    android:textSize="18dp"
+                    android:textSize="@dimen/Top_Navigation_Text_Font"
+                    android:gravity="center"
                     android:layout_gravity="center"
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/radiobutton_top_left_checked_shape"/>
                 <RadioButton
                     android:id="@+id/rb_show_map"
                     android:button="@null"
                     android:text="地图"
-                    android:textSize="18dp"
+                    android:textSize="@dimen/Top_Navigation_Text_Font"
                     android:layout_gravity="center"
-                    android:layout_width="wrap_content"
+                    android:layout_width="80dp"
+                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:background="@drawable/radiobutton_top_right_uncheck_shape"/>
             </RadioGroup>
@@ -45,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:layout_gravity="right|center_vertical"
-            android:src="@drawable/ic_add_black_24dp"/>
+            android:src="@drawable/ic_add_black"/>
     </android.support.v7.widget.Toolbar>
 
     <FrameLayout
@@ -56,5 +64,13 @@
         android:descendantFocusability="blocksDescendants"
         >
     </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar_fields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        style="@style/Loading_ProgressBar"/>
 
 </RelativeLayout>

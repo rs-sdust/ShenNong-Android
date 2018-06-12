@@ -22,7 +22,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by yxq on 2018/5/24.
+ * @author zxz
+ * 欢迎界面，并判断用户是否连接网络
  */
 
 public class WelcomeActivity extends AppCompatActivity {

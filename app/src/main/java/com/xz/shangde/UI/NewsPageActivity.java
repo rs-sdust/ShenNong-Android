@@ -16,7 +16,8 @@ import android.widget.VideoView;
 import com.xz.shangde.R;
 
 /**
- * Created by yxq on 2018/5/24.
+ * @author zxz
+ * 显示新闻页面，支持js，视频好像不能播放（待解决）
  */
 
 public class NewsPageActivity extends AppCompatActivity {

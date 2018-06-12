@@ -6,7 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by yxq on 2018/5/22.
+ * @author zxz
+ * 存储农情遥感信息
  */
 
 public class RSInfo implements Serializable {

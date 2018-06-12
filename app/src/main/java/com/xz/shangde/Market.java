@@ -3,7 +3,8 @@ package com.xz.shangde;
 import java.io.Serializable;
 
 /**
- * Created by yxq on 2018/5/30.
+ * @author zxz
+ * 存储市场信息
  */
 
 public class Market implements Serializable {

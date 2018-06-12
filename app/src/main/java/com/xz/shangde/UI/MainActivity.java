@@ -55,7 +55,9 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/4/25.
+ * @author zxz
+ * 主界面，使用BottomNavigationView + fragment 完成内容切换操作
+ * 下载各数据字典以备使用
  */
 
 public class MainActivity extends AppCompatActivity {

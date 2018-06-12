@@ -17,7 +17,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,7 +42,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.LinkedHashMap;
 
 import okhttp3.OkHttpClient;
@@ -51,7 +49,8 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/5/21.
+ * @author zxz
+ * 显示地块信息（边界，名称，作物，物候期等等）
  */
 
 public class FieldPropertyActivity extends AppCompatActivity {
@@ -59,6 +58,7 @@ public class FieldPropertyActivity extends AppCompatActivity {
     private Context context;
 
     private Toolbar tb_field_property;
+    private ImageView iv_back_field_property;
     private ImageView iv_delete_field;
     private LinearLayout ll_edit_field;
     private LinearLayout ll_share_field;
@@ -170,11 +170,8 @@ public class FieldPropertyActivity extends AppCompatActivity {
     public void initView() {
         tb_field_property = findViewById(R.id.tb_field_property);
 
-        setSupportActionBar(tb_field_property);
-        //关键下面两句话，设置了回退按钮，及点击事件的效果
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        tb_field_property.setNavigationOnClickListener(new View.OnClickListener() {
+        iv_back_field_property =findViewById(R.id.iv_back_field_property);
+        iv_back_field_property.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

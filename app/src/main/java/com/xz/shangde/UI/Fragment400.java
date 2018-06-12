@@ -19,7 +19,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by yxq on 2018/4/26.
+ * @author zxz
+ * MainActivity下的第四个fragment，对应于底部导航栏为“我的”
+ * 用于编辑个人及农场信息、提供设置等其他接口
  */
 
 public class Fragment400 extends Fragment {

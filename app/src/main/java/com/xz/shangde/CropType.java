@@ -1,7 +1,8 @@
 package com.xz.shangde;
 
 /**
- * Created by yxq on 2018/5/28.
+ * @author zxz
+ * 存储作物种类字典
  */
 
 public class CropType {

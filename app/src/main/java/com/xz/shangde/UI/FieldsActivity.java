@@ -36,12 +36,14 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/5/17.
+ * @author zxz
+ * 我的农场，用radiobutton + fragment控制显示地块信息列表和地块在地图上的位置
  */
 
 public class FieldsActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private ImageView iv_back_fields;
     private RadioGroup rg_fields_map;
     private RadioButton rb_show_fiels;
     private RadioButton rb_show_map;
@@ -94,11 +96,8 @@ public class FieldsActivity extends AppCompatActivity {
 
     public void initView(){
         toolbar=findViewById(R.id.tb_fields_map);
-        setSupportActionBar(toolbar);
-        //关键下面两句话，设置了回退按钮，及点击事件的效果
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        iv_back_fields=findViewById(R.id.iv_back_fields);
+        iv_back_fields.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

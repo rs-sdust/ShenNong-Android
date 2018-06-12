@@ -17,7 +17,8 @@ import com.xz.shangde.R;
 import java.util.ArrayList;
 
 /**
- * Created by yxq on 2018/5/11.
+ * @author zxz
+ * 显示当前天气并显示天气预报
  */
 
 public class WeatherActivity extends AppCompatActivity {

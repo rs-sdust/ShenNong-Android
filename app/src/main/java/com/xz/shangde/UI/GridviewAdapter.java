@@ -15,7 +15,8 @@ import android.widget.TextView;
 import com.xz.shangde.R;
 
 /**
- * Created by yxq on 2018/4/26.
+ * @author zxz
+ * 最初的fragment100方案设计，已放弃
  */
 
 public class GridviewAdapter extends BaseAdapter {

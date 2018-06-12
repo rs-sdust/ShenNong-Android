@@ -23,7 +23,9 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 /**
- * Created by yxq on 2018/5/17.
+ * @author zxz
+ * 地块列表的fragment，显示在FieldsActivity中
+ * 用于表现农场的地块数量、面积以及详细信息列表（ExpListViewAdapter）
  */
 
 public class FragmentFieldsList extends Fragment {

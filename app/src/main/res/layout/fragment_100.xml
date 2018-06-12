@@ -5,63 +5,65 @@
     android:layout_height="match_parent"
     >
 
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
     <RelativeLayout
         android:id="@+id/rl__tb_100"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         >
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/tb_100"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/Top_Navigation_Height">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_100"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Top_Navigation_Height">
 
-        <!--第一栏-->
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:background="@drawable/ic_place_black_24dp"
+            <!--第一栏-->
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:background="@drawable/ic_location_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_position_city_100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未知"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/color_white"/>
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/tv_position_city_100"
+                android:id="@+id/tv_farm_name_100"
+                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="未知"
-                android:textSize="20dp"
+                android:text="我的农场"
+                android:textSize="@dimen/Top_Navigation_Text_Font"
                 android:textColor="@color/color_white"/>
 
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/tv_farm_name_100"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="我的农场"
-            android:textSize="20dp"
-            android:textColor="@color/color_white"/>
-
-        <!--新建地块-->
-        <ImageView
-            android:id="@+id/iv_add_farm_100"
-            android:layout_gravity="right"
-            android:layout_marginRight="10dp"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:background="@drawable/ic_add_black_24dp"/>
-    </android.support.v7.widget.Toolbar>
+            <!--新建地块-->
+            <ImageView
+                android:id="@+id/iv_add_farm_100"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_add_white"/>
+        </android.support.v7.widget.Toolbar>
 
     </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/iv_background"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
     <!--左上角-->
     <LinearLayout
@@ -85,6 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="年月日"
+                android:textSize="@dimen/Normal_Text_font"
                 android:textColor="@color/color_white"
                 />
 
@@ -94,6 +97,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="周几"
+                android:textSize="@dimen/Normal_Text_font"
                 android:textColor="@color/color_white"/>
 
             <TextView
@@ -102,6 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="农历"
+                android:textSize="@dimen/Normal_Text_font"
                 android:textColor="@color/color_white"/>
         </LinearLayout>
 
@@ -117,7 +122,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="温度"
-                android:textSize="40dp"
+                android:textSize="36sp"
                 android:textColor="@color/color_white"
                 />
 
@@ -127,6 +132,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="天气"
+                android:textSize="@dimen/Normal_Text_font"
                 android:textColor="@color/color_white"/>
 
         </LinearLayout>
@@ -143,6 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="风向"
+                android:textSize="@dimen/Normal_Text_font"
                 android:textColor="@color/color_white"
                 />
 
@@ -152,6 +159,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="风力"
+                android:textSize="@dimen/Normal_Text_font"
                 android:textColor="@color/color_white"/>
 
         </LinearLayout>
@@ -162,11 +170,11 @@
     <LinearLayout
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="20dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:layout_width="170dp"
-        android:layout_height="200dp"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
         android:id="@+id/linearLayout">
 
         <TextView
@@ -174,12 +182,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="农场简报"
-            android:textSize="20dp"
+            android:textSize="@dimen/Normal_Text_font"
             android:textColor="@color/color_white"/>
 
         <TextView
             android:id="@+id/tv_report_detail_100"
             android:text="农场简报--细节"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/color_white"/>
@@ -187,22 +198,34 @@
 
         <LinearLayout
             android:id="@+id/ll_enter_farm_100"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
             android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/iv_enter_to_farm_100"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_split_white"
                 />
             <TextView
                 android:id="@+id/tv_enter_to_farm_100"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="进入我的农场"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
                 android:textColor="@color/color_white"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_hold_white"/>
         </LinearLayout>
     </LinearLayout>
 

@@ -22,7 +22,8 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/5/30.
+ * @author zxz
+ * 以listview的方式罗列所有的TASK信息
  */
 
 public class ListViewAdapter_Task extends BaseAdapter {

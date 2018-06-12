@@ -3,7 +3,8 @@ package com.xz.shangde;
 import java.io.Serializable;
 
 /**
- * Created by yxq on 2018/5/22.
+ * @author zxz
+ * 存储农情信息等级字典表
  */
 
 public class RSInfo_Grade implements Serializable {

@@ -15,7 +15,8 @@ import com.xz.shangde.R;
 import java.util.ArrayList;
 
 /**
- * Created by yxq on 2018/5/17.
+ * @author zxz
+ * 批量修改分组时所用的dialog，停止使用，转而使用ModifyDialog
  */
 
 public class ModifyActivity extends AppCompatActivity {

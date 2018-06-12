@@ -6,7 +6,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
 
         <RelativeLayout
             android:id="@+id/rl_edit_person_info"
@@ -20,7 +21,7 @@
                 android:layout_centerInParent="true"
                 android:text="编辑个人资料"
                 android:textColor="#FFFFFF"
-                android:textSize="18dp" />
+                android:textSize="@dimen/Top_Navigation_Text_Font" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -33,7 +34,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/ic_person_grey_24dp"/>
+                android:src="@drawable/ic_people_grey"/>
             <TextView
                 android:id="@+id/load_image_info"
                 android:text="头像"
@@ -46,20 +47,24 @@
         <LinearLayout
             android:id="@+id/ll_name_edit_info"
             android:orientation="horizontal"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="姓          名：" />
+                android:text="姓          名："
+                android:textSize="14dp"
+                android:textColor="@color/color_text_black"/>
 
             <EditText
                 android:id="@+id/et_name_edit_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="请输入姓名"
+                android:layout_marginLeft="5dp"
                 android:background="@null"
                 android:layout_weight="1"/>
 
@@ -68,10 +73,14 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/View_Dividing_line_height"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
             android:background="@color/color_Dividing_line"/>
 
         <LinearLayout
             android:id="@+id/ll_phone_edit_info"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="horizontal"
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
@@ -80,37 +89,45 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="手机号码：" />
+                android:text="手机号码："
+                android:textSize="14sp"
+                android:textColor="@color/color_text_black"/>
 
             <TextView
                 android:id="@+id/tv_phone_edit_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
             android:layout_height="@dimen/View_Dividing_line_height"
             android:background="@color/color_Dividing_line"/>
 
         <LinearLayout
             android:id="@+id/ll_degree_edit_info"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="horizontal"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="身          份：" />
+                android:text="身          份："
+                android:textColor="@color/color_text_black"/>
 
             <Spinner
                 android:id="@+id/spinner_degree_edit_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:entries="@array/degrees">
             </Spinner>
 
@@ -118,11 +135,13 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="10dp"
+            android:layout_height="13dp"
             android:background="#E3E3E3"/>
 
         <LinearLayout
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:id="@+id/ll_location_edit_info"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -131,12 +150,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="农场位置:"/>
+                android:text="农场位置:"
+                android:textColor="@color/color_text_black"/>
 
             <Spinner
                 android:id="@+id/spinner_province"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_weight="1">
             </Spinner>
 
@@ -158,33 +179,39 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/View_Dividing_line_height"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
             android:background="@color/color_Dividing_line"/>
 
         <LinearLayout
             android:id="@+id/ll_farm_name_edit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
                 android:text="农场名称："
-                android:gravity="center"
                 android:id="@+id/tv_farm_name"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Normal_Text_font"
+                android:layout_gravity="center"
+                android:textColor="@color/color_text_black"/>
 
             <EditText
                 android:id="@+id/farm_name_print"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/tv_farm_name"
-                android:visibility="visible"
-                android:layout_weight="1"/>
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_weight="1"
+                />
 
             <Spinner
                 android:id="@+id/farm_name_select"
                 android:layout_width="0dp"
-                android:layout_toRightOf="@id/tv_farm_name"
                 android:layout_height="wrap_content"
                 android:visibility="gone"
                 android:layout_weight="1"></Spinner>
@@ -193,6 +220,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/View_Dividing_line_height"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
             android:background="@color/color_Dividing_line"/>
 
     </LinearLayout>
@@ -202,8 +231,10 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/button_login_shape"
         android:text="保   存"
-        android:textSize="18dp"
+        android:textSize="14dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:textColor="@color/color_white"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="40dp" />
 </RelativeLayout>

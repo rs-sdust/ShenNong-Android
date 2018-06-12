@@ -9,7 +9,8 @@ import android.widget.ImageView;
 import com.xz.shangde.R;
 
 /**
- * Created by yxq on 2018/5/24.
+ * @author zxz
+ * 下载所有数据，并放置等待动画，已废弃
  */
 
 public class LoadDataActivity extends AppCompatActivity {

@@ -7,7 +7,8 @@ import android.util.Log;
 import android.view.View;
 
 /**
- * Created by yxq on 2018/6/5.
+ * @author zxz
+ * 绘制日期所占比例（FieldPropertyActivity），目前已使用processbar替代
  */
 
 public class DateView extends View {

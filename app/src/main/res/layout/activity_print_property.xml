@@ -7,12 +7,17 @@
         android:id="@+id/tb_print_property"
         android:layout_width="match_parent"
         android:layout_height="@dimen/Top_Navigation_Height">
+        <ImageView
+            android:id="@+id/iv_back_print_property"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_black"/>
         <TextView
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="输入地块属性"
-            android:textSize="18dp"/>
+            android:textSize="@dimen/Top_Navigation_Text_Font"/>
     </android.support.v7.widget.Toolbar>
 
     <org.osmdroid.views.MapView
@@ -53,7 +58,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>
-        
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -135,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="right"
-                android:src="@drawable/ic_mode_edit_black_24dp"/>
+                android:src="@drawable/ic_edit_black"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -144,9 +149,9 @@
         android:id="@+id/btn_print_property_commit"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:text="保  存"
-        android:textSize="20dp"
+        android:textSize="17sp"
         android:textColor="#FFFFFF"
         android:background="@color/color_main"/>
 

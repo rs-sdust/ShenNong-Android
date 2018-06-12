@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="50dp"
+    android:layout_height="40dp"
     >
 
     <TextView
@@ -9,8 +9,9 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_centerInParent="true"
+        android:textSize="@dimen/Normal_Text_font"
         android:layout_width="wrap_content"
-        android:layout_height="50dp" />
+        android:layout_height="40dp" />
 
     <ImageView
         android:id="@+id/iv_change_fields_crop"
@@ -19,5 +20,5 @@
         android:layout_marginRight="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_mode_edit_black_24dp"/>
+        android:src="@drawable/ic_edit_black"/>
 </RelativeLayout>

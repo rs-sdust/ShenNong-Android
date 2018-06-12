@@ -32,7 +32,7 @@
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="15dp"
             android:background="@drawable/button_shape_200"
-            android:src="@drawable/ic_add_a_photo_black_24dp" />
+            android:src="@drawable/ic_photo_black" />
 
     </RelativeLayout>
 
@@ -50,7 +50,7 @@
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="15dp"
             android:background="@drawable/button_shape_200"
-            android:src="@drawable/ic_fullscreen_black_24dp" />
+            android:src="@drawable/ic_fullscreen_black" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -66,7 +66,7 @@
             android:layout_marginBottom="50dp"
             android:layout_marginLeft="15dp"
             android:background="@drawable/button_shape_200"
-            android:src="@drawable/ic_my_location_black_24dp" />
+            android:src="@drawable/ic_location_grey" />
     </RelativeLayout>
 
     <RelativeLayout

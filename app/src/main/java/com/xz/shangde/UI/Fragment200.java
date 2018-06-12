@@ -63,7 +63,9 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/4/26.
+ * @author zxz
+ * MainActivity下的第二个fragment，对应于底部导航栏为“农情”
+ * 用于显示地块位置、农情信息、实况信息，并提供定位和上传实况信息的接口
  */
 
 public class Fragment200 extends Fragment {

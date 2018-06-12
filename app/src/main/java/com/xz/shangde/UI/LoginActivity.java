@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.SpannedString;
+import android.text.style.AbsoluteSizeSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -38,7 +42,9 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/4/26.
+ * @author zxz
+ * 登陆操作界面，启动界面
+ * 短信验证码使用的是MOB公司的SMSSDK服务
  */
 
 public class LoginActivity extends Activity {
@@ -94,7 +100,17 @@ public class LoginActivity extends Activity {
             identifyCode = findViewById(R.id.et_IdentifyCode);
             getIdentifyCode = findViewById(R.id.btn_getIdentifyCode);
             load = findViewById(R.id.btn_load);
-            progressbar_login=findViewById(R.id.progressbar_login);
+            progressbar_login = findViewById(R.id.progressbar_login);
+
+            SpannableString ss = new SpannableString("请输入手机号");//定义hint的值
+            AbsoluteSizeSpan ass = new AbsoluteSizeSpan(14, true);//设置字体大小 true表示单位是sp
+            ss.setSpan(ass, 0, ss.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            phoneNumber.setHint(new SpannedString(ss));
+
+            SpannableString ss1 = new SpannableString("请输入验证码");//定义hint的值
+            AbsoluteSizeSpan ass1 = new AbsoluteSizeSpan(14, true);//设置字体大小 true表示单位是sp
+            ss1.setSpan(ass1, 0, ss1.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            identifyCode.setHint(new SpannedString(ss1));
         }
 
     }
@@ -297,7 +313,7 @@ public class LoginActivity extends Activity {
     }
 
     public void testBackEnd(final String phone) {
-        new Thread(){
+        new Thread() {
             @Override
             public void run() {
                 Log.i("TAG", "thread run");
@@ -305,8 +321,8 @@ public class LoginActivity extends Activity {
                         getApplication();
                 final String url = application.getURL();
 
-                //判断用户是否存在，GET方法,所用接口：User/IsExsit?mobile={mobile}
-                String s = url + "User/IsExsit?mobile=" + phone;
+                //判断用户是否存在，GET方法,所用接口：User/IsExist?mobile={mobile}
+                String s = url + "User/IsExist?mobile=" + phone;
 //                String s="http://192.168.1.116/shennong/api/User/IsExsit?mobile=17136371921";
                 Log.i("TAG", s);
                 OkHttpClient client = new OkHttpClient();
@@ -318,14 +334,10 @@ public class LoginActivity extends Activity {
                     if (response.isSuccessful()) {
                         Headers responseHeaders = response.headers();
                         String Token = responseHeaders.get("Token");
-                        Log.i("TAG", "Token:" + Token);
                         String response_data = response.body().string();
                         JSONObject jsonObject = new JSONObject(response_data);
-                        Log.i("TAG", jsonObject.toString());
                         String status = jsonObject.getString("status");
-                        Log.i("TAG", "status:" + status);
                         String msg = jsonObject.getString("msg");
-                        Log.i("TAG", "msg:" + msg);
 
                         SharedPreferences sp = getSharedPreferences("User", Context
                                 .MODE_PRIVATE);
@@ -334,22 +346,20 @@ public class LoginActivity extends Activity {
 
                         if (Boolean.valueOf(status)) {
                             //登陆成功，并下载用户数据（填充User类）
-                            JSONArray data = jsonObject.getJSONArray("data");
+                            JSONObject data = jsonObject.getJSONObject("data");
                             Log.i("TAG", data.toString());
-                            JSONObject data_user = data.getJSONObject(0);
-                            int id = data_user.getInt("id");
-                            String user_name = data_user.getString("name");
-                            String psw = data_user.getString("psw");
-                            int sex = data_user.getInt("sex");
-                            int role = data_user.getInt("role");
-                            int farm = data_user.getInt("farm");
-                            String icon = data_user.getString("icon");
+                            int id = data.getInt("id");
+                            String user_name = data.getString("name");
+                            String psw = data.getString("im_pwd");
+                            int role = data.getInt("role");
+                            int farm = data.getInt("farm");
+                            String icon = data.getString("icon");
 
 
-                            //拉取农场信息并保存，GET方法，所用接口：api/Farm/GetFarmbrief?farmid={farmid}
+                            //拉取农场信息并保存，GET方法，所用接口：api/Farm/GetFarm?id={id}
                             OkHttpClient client1 = new OkHttpClient();
                             Request request1 = new Request.Builder().header("Token",
-                                    Token).url(url + "Farm/GetFarmbrief?farmid="
+                                    Token).url(url + "Farm/GetFarm?id="
                                     + farm).build();
                             Response response1 = client1.newCall(request1).execute();
                             if (response1.isSuccessful()) {
@@ -358,27 +368,22 @@ public class LoginActivity extends Activity {
                                 Log.i("TAG", object_farm.toString());
                                 boolean status_farm = object_farm.getBoolean("status");
                                 if (status_farm) {
-                                    JSONArray data_array_farm = object_farm
-                                            .getJSONArray("data");
-                                    JSONObject data_farm = data_array_farm
-                                            .getJSONObject(0);
+                                    JSONObject data_farm = object_farm.getJSONObject("data");
                                     int farm_id = data_farm.getInt("id");
                                     String farm_name = data_farm.getString("name");
-                                    JSONObject object_farm_address = data_farm
-                                            .getJSONObject("address");
 
-                                    String province_farm = object_farm_address
-                                            .getString("province");
-                                    String city_farm = object_farm_address.getString
-                                            ("city");
-                                    String county_farm = object_farm_address
-                                            .getString("county");
-                                    int province_index_farm = object_farm_address
-                                            .getInt("province_index");
-                                    int city_index_farm = object_farm_address.getInt
-                                            ("city_index");
-                                    int county_index_farm = object_farm_address
-                                            .getInt("county_index");
+                                    String address=data_farm.getString("address");
+                                    address=address.replace("{","");
+                                    address=address.replace("}","");
+                                    address=address.trim();
+                                    String[] address_array=address.split("[\\,]");
+
+                                    String province_farm=address_array[0];
+                                    String city_farm=address_array[1];
+                                    String county_farm=address_array[2];
+                                    int province_index_farm=0;
+                                    int city_index_farm=0;
+                                    int county_index_farm=0;
 
                                     sp_editor.putString("FarmName", farm_name);
                                     sp_editor.putInt("FarmID", farm_id);
@@ -408,7 +413,6 @@ public class LoginActivity extends Activity {
                             sp_editor.putString("User_Name", user_name);
                             sp_editor.putString("PhoneNumber", phone);
                             sp_editor.putString("Password", psw);
-                            sp_editor.putInt("Sex", sex);
                             sp_editor.putInt("Role", role);
                             sp_editor.putInt("Farm", farm);
                             sp_editor.putString("Icon", icon);

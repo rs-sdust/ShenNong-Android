@@ -21,7 +21,9 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * Created by yxq on 2018/5/4.
+ * @author zxz
+ * 批量修改分组时所用的dialog
+ * 提供修改种植作物和种植时间两个接口
  */
 
 public class ModifyDialog extends Dialog {

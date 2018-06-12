@@ -25,7 +25,8 @@ import org.osmdroid.views.overlay.Polygon;
 import java.util.ArrayList;
 
 /**
- * Created by yxq on 2018/5/23.
+ * @author zxz
+ * 地块地图的fragment，显示在FieldsActivity中
  */
 
 public class FragmentMapview extends Fragment {

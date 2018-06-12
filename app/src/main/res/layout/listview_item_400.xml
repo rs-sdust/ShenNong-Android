@@ -28,7 +28,7 @@
                 android:layout_centerInParent="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_arrow_back_black_24dp"/>
+                android:background="@drawable/ic_enter_grey"/>
         </RelativeLayout>
 
         <View

@@ -16,7 +16,8 @@ import com.xz.shangde.R;
 import java.util.ArrayList;
 
 /**
- * Created by yxq on 2018/6/6.
+ * @author zxz
+ * 头条新闻的显示adapter
  */
 
 public class TopNewsAdapter extends PagerAdapter {

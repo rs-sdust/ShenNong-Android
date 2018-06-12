@@ -30,7 +30,8 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/5/24.
+ * @author zxz
+ * 使用listview罗列资讯信息
  */
 
 public class NewsActivity extends AppCompatActivity {

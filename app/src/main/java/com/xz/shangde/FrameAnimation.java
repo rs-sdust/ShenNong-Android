@@ -3,7 +3,8 @@ package com.xz.shangde;
 import android.widget.ImageView;
 
 /**
- * Created by yxq on 2018/5/15.
+ * @author zxz
+ * 测试帧动画的类，占用内存太高，已废弃
  */
 
 public class FrameAnimation {

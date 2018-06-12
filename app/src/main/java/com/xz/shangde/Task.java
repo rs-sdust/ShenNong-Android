@@ -1,7 +1,8 @@
 package com.xz.shangde;
 
 /**
- * Created by yxq on 2018/5/30.
+ * @author zxz
+ * 存储TASK信息
  */
 
 public class Task{

@@ -19,7 +19,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by yxq on 2018/5/23.
+ * @author zxz
+ * 绘制等级图（图例），显示在fragment200中
  */
 
 public class GradeView extends View {

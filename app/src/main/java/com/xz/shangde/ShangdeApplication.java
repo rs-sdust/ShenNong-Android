@@ -14,7 +14,8 @@ import java.util.LinkedHashMap;
 import okhttp3.OkHttpClient;
 
 /**
- * Created by yxq on 2018/4/25.
+ * @author zxz
+ * 存储全局变量，初始化Mob
  */
 
 public class ShangdeApplication extends Application {

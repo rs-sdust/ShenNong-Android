@@ -5,7 +5,8 @@ import android.os.Parcelable;
 import java.io.Serializable;
 
 /**
- * Created by yxq on 2018/5/11.
+ * @author zxz
+ * 存储未来天气数据
  */
 
 public class FutureWeatherDate implements Serializable {

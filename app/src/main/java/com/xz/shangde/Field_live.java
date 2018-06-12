@@ -7,7 +7,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 /**
- * Created by yxq on 2018/5/22.
+ * @author zxz
+ * 存储实况数据信息
  */
 
 public class Field_live implements Serializable {

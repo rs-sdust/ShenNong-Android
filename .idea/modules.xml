@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Shangde.iml" filepath="$PROJECT_DIR$/Shangde.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShenNong-Android.iml" filepath="$PROJECT_DIR$/ShenNong-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wx/wx.iml" filepath="$PROJECT_DIR$/wx/wx.iml" />
       <module fileurl="file://$PROJECT_DIR$/wx/wx.iml" filepath="$PROJECT_DIR$/wx/wx.iml" />
     </modules>
   </component>

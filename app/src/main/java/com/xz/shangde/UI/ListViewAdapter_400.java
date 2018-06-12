@@ -11,7 +11,8 @@ import com.xz.shangde.R;
 import java.util.List;
 
 /**
- * Created by yxq on 2018/5/9.
+ * @author zxz
+ * fragment400中的各设置模块
  */
 
 public class ListViewAdapter_400 extends BaseAdapter {

@@ -51,7 +51,9 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/5/17.
+ * @author zxz
+ * 自动分组（根据地块的种植作物）显示地块的adapter
+ * 可以进入每一个地块的详细信息进行查看，也可以批量修改一组的信息
  */
 
 public class ExpListViewAdapter extends BaseExpandableListAdapter {

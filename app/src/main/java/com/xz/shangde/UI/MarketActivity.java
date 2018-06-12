@@ -11,7 +11,8 @@ import android.view.ViewGroup;
 import com.xz.shangde.R;
 
 /**
- * Created by yxq on 2018/5/24.
+ * @author zxz
+ * 显示市场信息，预留界面，目前未有内容
  */
 
 public class MarketActivity extends AppCompatActivity {

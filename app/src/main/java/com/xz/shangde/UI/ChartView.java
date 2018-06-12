@@ -18,7 +18,9 @@ import com.xz.shangde.R;
 import java.util.ArrayList;
 
 /**
- * Created by yxq on 2018/5/11.
+ * @author zxz
+ * 绘制天气的折线图，目前支持6天的预报天气
+ * 如果想要更多的天的天气，需要重新修改或添加组件完成这一工作
  */
 
 public class ChartView extends View {

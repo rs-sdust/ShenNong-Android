@@ -14,7 +14,8 @@ import com.xz.shangde.R;
 import java.util.ArrayList;
 
 /**
- * Created by yxq on 2018/5/24.
+ * @author zxz
+ * 以listview的方式罗列所有的资讯信息
  */
 
 public class ListViewAdapter_news extends BaseAdapter{

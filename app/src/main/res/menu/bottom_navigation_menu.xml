@@ -2,21 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_farm"
-        android:icon="@drawable/ic_launcher_background"
+        android:icon="@drawable/bottom_navigationbar_farm_selector"
         android:title="农场" />
 
     <item
         android:id="@+id/navigation_farmthing"
-        android:icon="@drawable/ic_launcher_background"
+        android:icon="@drawable/bottom_navigationbar_farmthing_selector"
         android:title="农事" />
 
     <item
         android:id="@+id/navigation_find"
-        android:icon="@drawable/ic_launcher_background"
+        android:icon="@drawable/bottom_navigationbar_find_selector"
         android:title="发现" />
 
     <item
         android:id="@+id/navigation_my"
-        android:icon="@drawable/ic_launcher_background"
+        android:icon="@drawable/bottom_navigationbar_my_selector"
         android:title="我的" />
 </menu>

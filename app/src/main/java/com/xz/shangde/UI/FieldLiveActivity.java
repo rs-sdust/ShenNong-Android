@@ -20,7 +20,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * Created by yxq on 2018/5/23.
+ * @author zxz
+ * 显示该处的实况信息
  */
 
 public class FieldLiveActivity extends AppCompatActivity {

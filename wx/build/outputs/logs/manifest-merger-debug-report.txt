@@ -1,387 +1,387 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:2:1-207:12
-INJECTED from E:\project\Shangde\wx\AndroidManifest.xml:2:1-207:12
-INJECTED from E:\project\Shangde\wx\AndroidManifest.xml:2:1-207:12
-INJECTED from E:\project\Shangde\wx\AndroidManifest.xml:2:1-207:12
-INJECTED from E:\project\Shangde\wx\AndroidManifest.xml:2:1-207:12
-INJECTED from E:\project\Shangde\wx\AndroidManifest.xml:2:1-207:12
-INJECTED from E:\project\Shangde\wx\AndroidManifest.xml:2:1-207:12
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:2:1-207:12
+INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:2:1-207:12
+INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:2:1-207:12
+INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:2:1-207:12
+INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:2:1-207:12
+INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:2:1-207:12
+INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:2:1-207:12
 	package
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:4:5-38
-		INJECTED from E:\project\Shangde\wx\AndroidManifest.xml
-		INJECTED from E:\project\Shangde\wx\AndroidManifest.xml
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:4:5-38
+		INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml
+		INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml
 	android:versionName
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:6:5-30
-		INJECTED from E:\project\Shangde\wx\AndroidManifest.xml
-		INJECTED from E:\project\Shangde\wx\AndroidManifest.xml
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:6:5-30
+		INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml
+		INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml
 	xmlns:tools
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:3:5-51
 	xmlns:android
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:5:5-28
-		INJECTED from E:\project\Shangde\wx\AndroidManifest.xml
-		INJECTED from E:\project\Shangde\wx\AndroidManifest.xml
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:5:5-28
+		INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml
+		INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml
 uses-sdk
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:8:5-44
-INJECTED from E:\project\Shangde\wx\AndroidManifest.xml:8:5-44
-INJECTED from E:\project\Shangde\wx\AndroidManifest.xml:8:5-44
-INJECTED from E:\project\Shangde\wx\AndroidManifest.xml:8:5-44
-INJECTED from E:\project\Shangde\wx\AndroidManifest.xml:8:5-44
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:8:5-44
+INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:8:5-44
+INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:8:5-44
+INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:8:5-44
+INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:8:5-44
 	android:targetSdkVersion
-		INJECTED from E:\project\Shangde\wx\AndroidManifest.xml
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:8:5-44
-		INJECTED from E:\project\Shangde\wx\AndroidManifest.xml
+		INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:8:5-44
+		INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:8:15-41
-		INJECTED from E:\project\Shangde\wx\AndroidManifest.xml
-		INJECTED from E:\project\Shangde\wx\AndroidManifest.xml
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:8:15-41
+		INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml
+		INJECTED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:10:5-81
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:10:22-78
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:10:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:11:5-80
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:11:22-77
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:11:22-77
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:12:5-79
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:12:22-76
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:12:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:13:5-76
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:13:5-76
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:13:22-73
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:13:22-73
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:14:5-75
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:14:5-75
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:14:22-72
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:14:22-72
 uses-permission#android.permission.READ_SETTINGS
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:15:5-72
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:15:5-72
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:15:22-69
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:15:22-69
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:16:5-73
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:16:5-73
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:16:22-70
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:16:22-70
 uses-permission#android.permission.INTERNET
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:17:5-67
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:17:5-67
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:17:22-64
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:17:22-64
 uses-permission#android.permission.GET_TASKS
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:18:5-68
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:18:5-68
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:18:22-65
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:18:22-65
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:19:5-71
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:19:5-71
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:19:22-68
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:19:22-68
 uses-permission#android.permission.WAKE_LOCK
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:20:5-68
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:20:5-68
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:20:22-65
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:20:22-65
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:21:5-80
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:21:5-80
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:21:22-77
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:21:22-77
 uses-permission#android.permission.VIBRATE
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:22:5-66
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:22:5-66
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:22:22-63
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:22:22-63
 uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:23:5-95
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:23:5-95
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:23:22-92
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:23:22-92
 uses-permission#com.sec.android.provider.badge.permission.READ
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:28:5-86
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:28:5-86
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:28:22-83
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:28:22-83
 uses-permission#com.sec.android.provider.badge.permission.WRITE
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:29:5-87
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:29:5-87
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:29:22-84
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:29:22-84
 uses-permission#com.htc.launcher.permission.READ_SETTINGS
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:30:5-81
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:30:5-81
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:30:22-78
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:30:22-78
 uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:31:5-83
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:31:5-83
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:31:22-80
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:31:22-80
 uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:32:5-88
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:32:5-88
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:32:22-85
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:32:22-85
 uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:33:5-84
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:33:5-84
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:33:22-81
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:33:22-81
 uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:34:5-83
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:34:5-83
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:34:22-80
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:34:22-80
 uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:35:5-91
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:35:5-91
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:35:22-89
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:35:22-89
 uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:36:5-92
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:36:5-92
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:36:22-90
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:36:22-90
 uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:37:5-90
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:37:5-90
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:37:22-88
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:37:22-88
 application
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:40:5-203:19
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:40:5-203:19
 activity#com.alibaba.mobileim.ui.WxChattingActvity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:46:9-52:70
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:46:9-52:70
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:49:13-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:49:13-49
 	android:launchMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:50:13-43
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:50:13-43
 	android:windowSoftInputMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:52:13-67
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:52:13-67
 	android:configChanges
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:48:13-63
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:48:13-63
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:51:13-69
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:51:13-69
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:47:13-69
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:47:13-69
 activity#com.alibaba.mobileim.ui.WxViewMergedForwardMsgActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:54:9-60:70
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:54:9-60:70
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:57:13-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:57:13-49
 	android:launchMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:58:13-43
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:58:13-43
 	android:windowSoftInputMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:60:13-67
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:60:13-67
 	android:configChanges
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:56:13-63
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:56:13-63
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:59:13-69
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:59:13-69
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:55:13-82
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:55:13-82
 activity#com.alibaba.mobileim.ui.WxConversationActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:63:9-68:69
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:63:9-68:69
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:66:13-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:66:13-49
 	android:launchMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:67:13-43
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:67:13-43
 	android:configChanges
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:65:13-63
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:65:13-63
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:68:13-66
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:68:13-66
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:64:13-74
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:64:13-74
 activity#com.alibaba.mobileim.ui.chat.MultiImageActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:71:10-78:16
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:71:10-78:16
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:74:13-47
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:74:13-47
 	android:launchMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:73:13-43
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:73:13-43
 	android:hardwareAccelerated
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:77:14-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:77:14-49
 	android:windowSoftInputMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:76:13-52
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:76:13-52
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:75:13-64
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:75:13-64
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:72:13-75
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:72:13-75
 activity#com.alibaba.mobileim.kit.imageviewer.ShowImageActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:80:9-86:50
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:80:9-86:50
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:83:13-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:83:13-49
 	android:launchMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:82:13-43
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:82:13-43
 	android:hardwareAccelerated
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:86:13-48
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:86:13-48
 	android:windowSoftInputMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:85:13-52
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:85:13-52
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:84:13-64
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:84:13-64
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:81:13-82
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:81:13-82
 activity#com.alibaba.mobileim.ui.multi.lightservice.MultiPickGalleryActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:88:9-91:72
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:88:9-91:72
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:90:13-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:90:13-49
 	android:configChanges
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:89:14-64
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:89:14-64
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:91:15-68
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:91:15-68
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:88:19-101
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:88:19-101
 activity#com.alibaba.mobileim.ui.selectfriend.SelectFriendsActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:92:9-95:76
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:92:9-95:76
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:94:19-55
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:94:19-55
 	android:configChanges
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:93:19-69
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:93:19-69
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:95:19-72
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:95:19-72
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:92:19-92
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:92:19-92
 activity#com.alibaba.mobileim.ui.FeedbackActvity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:97:9-103:70
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:97:9-103:70
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:100:13-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:100:13-49
 	android:launchMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:101:13-43
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:101:13-43
 	android:windowSoftInputMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:103:13-67
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:103:13-67
 	android:configChanges
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:99:13-63
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:99:13-63
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:102:13-59
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:102:13-59
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:98:13-67
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:98:13-67
 service#com.alibaba.mobileim.appmonitor.tiptool.TooltipService
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:107:3-109:14
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:107:3-109:14
 	android:exported
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:108:79-103
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:108:79-103
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:108:8-77
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:108:8-77
 service#com.alibaba.tcms.service.TCMSService
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:112:9-116:19
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:112:9-116:19
 	android:process
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:115:13-43
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:115:13-43
 	android:exported
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:114:13-36
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:114:13-36
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:113:13-64
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:113:13-64
 service#com.alibaba.tcms.service.TCMSService$TCMSKernalService
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:117:9-120:19
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:117:9-120:19
 	android:process
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:119:13-43
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:119:13-43
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:118:13-82
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:118:13-82
 service#com.alibaba.tcms.service.ListenerService
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:123:9-125:19
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:123:9-125:19
 	android:exported
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:124:69-92
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:124:69-92
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:124:13-68
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:124:13-68
 activity#com.alibaba.mobileim.kit.CloudPwdSettingHintActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:128:9-133:69
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:128:9-133:69
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:132:13-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:132:13-49
 	android:launchMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:131:13-43
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:131:13-43
 	android:configChanges
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:130:13-63
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:130:13-63
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:133:13-66
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:133:13-66
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:129:13-80
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:129:13-80
 activity#com.alibaba.mobileim.login.WaitProgresssActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:136:9-85
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:136:9-85
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:136:19-82
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:136:19-82
 activity#com.alibaba.mobileim.ui.atmessage.AtMsgListActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:139:9-144:68
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:139:9-144:68
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:142:13-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:142:13-49
 	android:launchMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:143:13-44
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:143:13-44
 	android:configChanges
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:141:13-63
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:141:13-63
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:144:13-66
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:144:13-66
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:140:13-79
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:140:13-79
 activity#com.alibaba.mobileim.ui.atmessage.SendAtMessageDetailActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:146:9-151:68
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:146:9-151:68
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:150:13-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:150:13-49
 	android:launchMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:149:13-43
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:149:13-43
 	android:configChanges
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:148:13-63
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:148:13-63
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:151:13-66
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:151:13-66
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:147:13-89
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:147:13-89
 activity#com.alibaba.mobileim.kit.chat.SelectTribeMemberActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:153:9-158:70
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:153:9-158:70
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:156:13-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:156:13-49
 	android:windowSoftInputMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:158:13-67
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:158:13-67
 	android:configChanges
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:155:13-63
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:155:13-63
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:157:13-66
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:157:13-66
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:154:13-83
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:154:13-83
 activity#com.alibaba.mobileim.kit.chat.EnlargeChattingTextActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:161:9-165:70
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:161:9-165:70
 	android:windowSoftInputMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:165:13-67
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:165:13-67
 	android:configChanges
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:163:13-63
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:163:13-63
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:164:13-60
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:164:13-60
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:162:13-85
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:162:13-85
 activity#com.alibaba.tcms.service.MonitorActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:167:9-172:64
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:167:9-172:64
 	android:process
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:171:13-43
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:171:13-43
 	android:launchMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:170:13-48
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:170:13-48
 	android:exported
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:169:13-36
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:169:13-36
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:172:13-61
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:172:13-61
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:168:13-68
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:168:13-68
 activity#com.alibaba.mobileim.kit.video.IMPlayVideoDetailActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:174:9-193:20
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:174:9-193:20
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:177:13-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:177:13-49
 	android:configChanges
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:176:13-63
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:176:13-63
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:178:13-60
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:178:13-60
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:175:13-84
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:175:13-84
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:179:13-192:29
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:179:13-192:29
 action#android.intent.action.VIEW
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:180:17-69
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:180:17-69
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:180:25-66
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:180:25-66
 category#android.intent.category.DEFAULT
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:181:17-76
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:181:17-76
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:181:27-73
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:181:27-73
 category#android.intent.category.BROWSABLE
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:182:17-78
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:182:17-78
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:182:27-75
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:182:27-75
 data
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:183:17-186:45
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:183:17-186:45
 	android:path
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:185:21-53
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:185:21-53
 	android:host
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:184:21-55
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:184:21-55
 	android:scheme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:186:21-42
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:186:21-42
 activity#com.alibaba.mobileim.ui.web.CustomHybridActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:195:9-200:55
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:195:9-200:55
 	android:screenOrientation
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:198:13-49
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:198:13-49
 	android:launchMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:197:13-43
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:197:13-43
 	android:windowSoftInputMode
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:200:13-52
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:200:13-52
 	android:theme
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:199:13-64
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:199:13-64
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:196:13-76
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:196:13-76
 activity#com.alibaba.mobileim.appmonitor.floatview.FloatViewActivity
-ADDED from E:\project\Shangde\wx\AndroidManifest.xml:202:9-95
+ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:202:9-95
 	android:name
-		ADDED from E:\project\Shangde\wx\AndroidManifest.xml:202:19-93
+		ADDED from C:\Users\sdzh09\Desktop\ShenNong-Android\wx\AndroidManifest.xml:202:19-93

@@ -55,7 +55,9 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/5/21.
+ * @author zxz
+ * 输入地块属性信息界面
+ * 修改作物信息和添加地块时均使用这一界面
  */
 
 public class PrintPropertyActivity extends AppCompatActivity {
@@ -63,6 +65,7 @@ public class PrintPropertyActivity extends AppCompatActivity {
     private Context context;
 
     private Toolbar tb_print_property;
+    private ImageView iv_back_print_property;
     private MapView mv_preview_property;
     private EditText ev_name_print_property;
     private TextView tv_area_print_property;
@@ -108,6 +111,7 @@ public class PrintPropertyActivity extends AppCompatActivity {
 
     public void initView() {
         tb_print_property = findViewById(R.id.tb_print_property);
+        iv_back_print_property=findViewById(R.id.iv_back_print_property);
         mv_preview_property = findViewById(R.id.mv_preview_property);
         ev_name_print_property = findViewById(R.id.ev_name_print_property);
         tv_area_print_property = findViewById(R.id.tv_area_print_property);
@@ -116,13 +120,9 @@ public class PrintPropertyActivity extends AppCompatActivity {
         btn_print_property_commit = findViewById(R.id.btn_print_property_commit);
         iv_edit_date_print_property = findViewById(R.id.iv_edit_date_print_property);
 
-        setSupportActionBar(tb_print_property);
-        //关键下面两句话，设置了回退按钮，及点击事件的效果
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        tb_print_property.setNavigationOnClickListener(new View.OnClickListener() {
+        iv_back_print_property.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 finish();
             }
         });
@@ -328,20 +328,18 @@ public class PrintPropertyActivity extends AppCompatActivity {
 
                                 Log.i("TAG", geom);
                                 OkHttpClient client_AddField = application.getClient();
-                                Log.i("TAG", "client is fine");
                                 String farmid = String.valueOf(farm.getFarm_ID());
-                                Log.i("TAG", "farmid is fine");
                                 String str = ev_name_print_property.getText().toString();
-                                Log.i("TAG", "str is fine");
-                                FormBody formBody_AddField = new FormBody.Builder().add("farm",
-                                        farmid).add("name", str).add("geom", geom).add("area",
-                                        String.valueOf(area.area_m2)).add("currentcrop", String
-                                        .valueOf(cropTypes.get(spinner_choose_crop_type
-                                                .getSelectedItemPosition()).id)).add("sowdate",
-                                        et_date_print_property.getText().toString()).add
-                                        ("phenophase", String.valueOf(-1)).add("thumb",
-                                        "http://img.taopic" + "" +
-                                                ".com/uploads/allimg/140327/235088-14032GP44387.jpg").build();
+                                FormBody formBody_AddField = new FormBody.Builder()
+                                        .add("farm", farmid)
+                                        .add("name", str)
+                                        .add("geom", geom)
+                                        .add("area", String.valueOf(area.area_m2))
+                                        .add("currentcrop", String.valueOf(cropTypes.get(spinner_choose_crop_type.getSelectedItemPosition()).id))
+                                        .add("sowdate", et_date_print_property.getText().toString())
+//                                        .add("phenophase", String.valueOf(-1))
+                                        .add("thumb", "http://img.taopic.com/uploads/allimg/140327/235088-14032GP44387.jpg")
+                                        .build();
 
                                 Log.i("TAG", "formbody is correct");
                                 Request request_AddField = new Request.Builder().header("Token",

@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
@@ -38,7 +39,10 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/4/26.
+ * @author zxz
+ * MainActivity下的第三个fragment，对应于底部导航栏为“发现”
+ * 用于推送头条、阅读新闻资讯、
+ * 查看市场信息（只有接口，需根据数据类型待补充）、学习农技（未添加，待确定形式后添加）
  */
 
 public class Fragment300 extends Fragment {
@@ -48,9 +52,9 @@ public class Fragment300 extends Fragment {
     private ProgressBar progressBar_300;
 
     private ViewPager viewPager;
-    private ImageView iv_watch_news;
-    private ImageView iv_search_market;
-    private ImageView iv_learn_tech;
+    private LinearLayout iv_watch_news;
+    private LinearLayout iv_search_market;
+    private LinearLayout iv_learn_tech;
     private ListView list_news_300;
 
     private ArrayList<News> TopNews=new ArrayList<>();
@@ -73,7 +77,7 @@ public class Fragment300 extends Fragment {
                 case MSE_RECOMMAND_NEWS_DOWNLOAD_SUCCESS:
                     ListViewAdapter_news recommand_news_adapter=new ListViewAdapter_news(RecommandNews,context);
                     list_news_300.setAdapter(recommand_news_adapter);
-//                    progressBar_300.setVisibility(View.INVISIBLE);
+                    progressBar_300.setVisibility(View.INVISIBLE);
                     break;
                 case MSE_DOWNLOAD_SUCCESS:
                     int position=viewPager.getCurrentItem();

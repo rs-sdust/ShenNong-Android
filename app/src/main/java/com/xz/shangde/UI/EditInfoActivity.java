@@ -46,7 +46,10 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by yxq on 2018/4/26.
+ * @author zxz
+ * 个人信息和农场信息类
+ * 在注册时会在LoginActivity后弹出，在登录后修改信息时会重用该类
+ * 判断的参数为boolean Logedin，登陆完成后修改其为true
  */
 
 public class EditInfoActivity extends Activity {

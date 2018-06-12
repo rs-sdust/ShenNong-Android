@@ -9,7 +9,8 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by yxq on 2018/5/14.
+ * @author zxz
+ * 存储地块信息
  */
 
 public class Field implements Serializable {
