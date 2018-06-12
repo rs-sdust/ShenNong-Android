@@ -7,13 +7,18 @@
         android:id="@+id/tb_news_page"
         android:layout_width="match_parent"
         android:layout_height="@dimen/Top_Navigation_Height">
+        <ImageView
+            android:id="@+id/iv_back_news_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_black"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="资讯"
             android:layout_gravity="center"
-            android:textSize="18dp"
-            android:textColor="#000000"/>
+            android:textSize="@dimen/Top_Navigation_Text_Font"
+            android:textColor="@color/color_text_black"/>
     </android.support.v7.widget.Toolbar>
 
     <WebView
