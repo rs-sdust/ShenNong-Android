@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:largeHeap="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.LoginActivity">
+        <activity android:name=".UI.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -25,7 +25,7 @@
         </activity>
         <activity android:name=".UI.UploadPhotoActivity" android:launchMode="singleTask"></activity>
         <activity android:name=".UI.MainActivity" android:launchMode="singleTask"></activity>
-        <activity android:name=".UI.WelcomeActivity" android:launchMode="singleTask"></activity>
+        <activity android:name=".UI.LoginActivity" android:launchMode="singleTask"></activity>
         <activity android:name=".UI.AddFarmActivity" android:launchMode="singleTask"></activity>
         <activity android:name=".UI.WeatherActivity" android:launchMode="singleTask"></activity>
         <activity android:name=".UI.FieldsActivity" android:launchMode="singleTask"></activity>
