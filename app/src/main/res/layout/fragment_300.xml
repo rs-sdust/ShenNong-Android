@@ -45,7 +45,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_news_300"/>
+                android:src="@drawable/ic_market_green"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_news_300"/>
+                android:src="@drawable/ic_farm_tech_300"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
