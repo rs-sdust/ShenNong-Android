@@ -35,9 +35,9 @@
    #### SharedPreferences---User:存储User和Farm信息
    |变量名称|变量类型|变量作用|备注|
    |:---|:---|:---|:---|
-   |用户信息：||||
    |Logedin|boolean|判断是否已经登陆||
    |Token|string|记录用户的Token值|与服务器交互的唯一标识|
+   |用户信息：||||
    |User_ID|int|记录用户的id||
    |User_Name|string|记录用户名||
    |PhoneNumber|string|记录用户手机号码|用户的唯一标识，不可修改项|
