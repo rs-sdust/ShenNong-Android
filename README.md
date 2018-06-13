@@ -14,6 +14,9 @@
 ### 3.进一步解决内存泄漏和OOM问题：
     handler  bitmap  thread ......
     
+### 4.地块跨组移动(目前分组是根据作物类型)：
+    ExpandableListView + 长按事件响应
+    
 ## 参考文档及说明：
 
 ### 1.地图实现：OpenStreetMap + GoogleMap tile 
