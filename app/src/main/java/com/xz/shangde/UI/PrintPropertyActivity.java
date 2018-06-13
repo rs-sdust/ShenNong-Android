@@ -285,7 +285,7 @@ public class PrintPropertyActivity extends AppCompatActivity {
                                 Log.i("TAG", "name:" + name);
                                 String sowdate = et_date_print_property.getText().toString();
                                 Log.i("TAG", "sowdate:" + sowdate);
-                                int crop = spinner_choose_crop_type.getSelectedItemPosition();
+                                int crop = cropTypes.get(spinner_choose_crop_type.getSelectedItemPosition()).id;
                                 Log.i("TAG", "crop:" + crop);
                                 float a = Float.parseFloat(tv_area_print_property.getText()
                                         .toString());
@@ -440,9 +440,13 @@ public class PrintPropertyActivity extends AppCompatActivity {
         String token = sharedPreferences.getString("Token", "");
 
         OkHttpClient client_UpdateField = new OkHttpClient();
-        FormBody formBody_UpdateField = new FormBody.Builder().add("id", String.valueOf(field_id)
-        ).add("name", Field_Name).add("area", String.valueOf(Field_Area)).add("sowdate", sowdate)
-                .add("currentcrop", String.valueOf(Field_Crop)).add("thumb", Field_Thumb).build();
+        FormBody formBody_UpdateField = new FormBody.Builder()
+                .add("id", String.valueOf(field_id))
+                .add("name", Field_Name)
+                .add("area", String.valueOf(Field_Area))
+                .add("sowdate", sowdate)
+                .add("currentcrop", String.valueOf(Field_Crop))
+                .add("thumb", Field_Thumb).build();
         Request request_UpdateField = new Request.Builder().header("Token", token).url(url +
                 "Fields/UpdateField").post(formBody_UpdateField).build();
         Log.i("TAG", "update field");
