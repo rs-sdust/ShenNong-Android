@@ -18,7 +18,7 @@
     
 参考文档及说明：
 
-1.地图实现：OpenStreetMap + GoogleMap tile
+1.地图实现：OpenStreetMap + GoogleMap tile \n
    注意事项：GoogleMap的地址源要注意是国内服务器地址
    参考文档：
    https://github.com/osmdroid/osmdroid
