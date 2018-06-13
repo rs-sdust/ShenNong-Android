@@ -32,6 +32,7 @@ import org.json.JSONObject;
 import org.osmdroid.api.IMapController;
 import org.osmdroid.tileprovider.tilesource.OnlineTileSourceBase;
 import org.osmdroid.tileprovider.tilesource.XYTileSource;
+import org.osmdroid.util.BoundingBox;
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.util.MapTileIndex;
 import org.osmdroid.views.MapView;
@@ -190,17 +191,17 @@ public class PrintPropertyActivity extends AppCompatActivity {
                 field_hasknow = application.getField(postion);
                 points = field_hasknow.getField_Boundary();
 
-                center_point = field_hasknow.getCenterPoint();
+                BoundingBox boundingBox=BoundingBox.fromGeoPoints(points);
+                center_point = boundingBox.getCenter();
                 mv_preview_property.setTileSource(GoogleHybrid);
                 mv_preview_property.setMultiTouchControls(true);
                 mv_preview_property.setBuiltInZoomControls(false);
                 //设置地图中心点位置
                 IMapController mapController = mv_preview_property.getController();
-                mapController.setZoom(15);
+                mapController.setZoom(16);
                 mapController.setCenter(center_point);
 
                 Polygon polygon = new Polygon();
-                polygon.setFillColor(Color.argb(75, 255, 0, 0));
                 polygon.setPoints(points);
                 mv_preview_property.getOverlayManager().add(polygon);
                 mv_preview_property.invalidate();
