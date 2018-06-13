@@ -32,7 +32,7 @@
 ### 3.说明：
    服务器的地址保存在了Application全局变量中了，发布时应注意修改这一地址 <br>
    
-   #### SharedPreferences---User:存储User和Farm信息
+   #### SharedPreferences---"User":存储User和Farm信息
    |变量名称|变量类型|变量作用|备注|
    |:---|:---|:---|:---|
    |Logedin|boolean|判断是否已经登陆||
