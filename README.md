@@ -30,4 +30,27 @@
    [天气接口api](http://api.mob.com/#/apiwiki/weather)<br>
    
 ### 3.说明：
-   服务器的地址保存在了Application全局变量中了，发布时应注意修改这一地址
+   服务器的地址保存在了Application全局变量中了，发布时应注意修改这一地址 <br>
+   
+   #### SharedPreferences---User:存储User和Farm信息
+   |变量名称|变量类型|变量作用|备注|
+   |:---|:---|:---|:---|
+   |用户信息：||||
+   |Logedin|boolean|判断是否已经登陆||
+   |Token|string|记录用户的Token值|与服务器交互的唯一标识|
+   |User_ID|int|记录用户的id||
+   |User_Name|string|记录用户名||
+   |PhoneNumber|string|记录用户手机号码|用户的唯一标识，不可修改项|
+   |Password|string|即时通讯的密码|服务器随机生成的，已废弃|
+   |Role|int|用户的角色|目前只有0和1两个值，0代表农场主，1代表管理员|
+   |Farm|int|用户所对应的农场id||
+   |Icon|string|用户的头像||
+   |农场信息：||||
+   |FarmID|int|农场的id|农场的唯一标识，不可修改项|
+   |FarmName|string|农场的名称||
+   |Province|string|农场所在的省||
+   |City|string|农场的所在市||
+   |County|string|农场的所在县||
+   |ProvinceIndex|int|农场省份在spinner中的位置|默认值是0|
+   |CityIndex|int|农场市在spinner中的位置|默认值是0|
+   |CountyIndex|int|农场县在spinner中的位置|默认值是0|
